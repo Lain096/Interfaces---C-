@@ -1,0 +1,37 @@
+﻿<Window x:Class="ExtrateWares.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExtrateWares"
+        mc:Ignorable="d"
+        Title="proyecto 1ª Evaluación Diego Laín Domingo Pereda" Height="600" Width="500" ResizeMode="NoResize">
+    <Window.Resources>
+        <Style x:Key="estiloBoton" TargetType="Button">
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="Background" Value="#FF8C16D2" />
+        </Style>
+    </Window.Resources>
+    <Canvas>
+        <Canvas.Background>
+            <ImageBrush ImageSource="Assets/fondo_inicio.jpg"/>
+        </Canvas.Background>
+        <Label Name="Titulo" Content="AlienWares"  Canvas.Top="77" HorizontalAlignment="Left" FontFamily="Broadway" FontSize="50" Canvas.Left="78" Foreground="#FF8C16D2" FontWeight="Bold" FontStyle="Italic" VerticalAlignment="Top" />
+        <Button x:Name="btnJugar" Content="Jugar" Canvas.Left="176" Canvas.Top="420" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Jugar" Height="58" Width="148" Style="{StaticResource estiloBoton}" Foreground=" White" FontFamily="Broadway" FontSize="24"/>
+        <RadioButton x:Name="rdFacil" Content="Facil" Canvas.Left="180" Canvas.Top="259" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontFamily="Broadway" FontSize="24" Height="29" Width="126" IsChecked="True" Checked="Radio_Group"/>
+        <RadioButton x:Name="rdMedio" Content="Medio" Canvas.Left="180" Canvas.Top="304" HorizontalAlignment="Left" VerticalAlignment="Top"  Foreground="White" FontFamily="Broadway" FontSize="24" Height="29" Width="148"  Checked="Radio_Group"/>
+        <RadioButton x:Name="rdDifícil" Content="Difícil" Canvas.Left="180" Canvas.Top="348" HorizontalAlignment="Left" VerticalAlignment="Top"  Foreground="White" FontFamily="Broadway" FontSize="24" Height="29" Width="144"  Checked="Radio_Group"/>
+        <Image Source="Assets/player.png" Canvas.Left="348" Canvas.Top="459" RenderTransformOrigin="0.5,0.5" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-33.758"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button Content="Salir" Canvas.Left="405" Canvas.Top="26" Background="Transparent" Foreground="White" FontSize="20" FontFamily="Broadway" Click="click_Salir" HorizontalAlignment="Left" VerticalAlignment="Center" BorderBrush="Transparent"/>
+    </Canvas>
+</Window>
