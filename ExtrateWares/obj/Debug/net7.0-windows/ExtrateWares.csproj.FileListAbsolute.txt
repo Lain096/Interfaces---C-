@@ -1,0 +1,140 @@
+E:\VisualStudio\Repositorio\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\pantalla.png
+E:\VisualStudio\Repositorio\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\placa base.png
+E:\VisualStudio\Repositorio\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\procesador.png
+E:\VisualStudio\Repositorio\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\ram.png
+E:\VisualStudio\Repositorio\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\raton.png
+E:\VisualStudio\Repositorio\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\ssd.png
+E:\VisualStudio\Repositorio\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\teclado.png
+E:\VisualStudio\Repositorio\ExtrateWares\bin\Debug\net7.0-windows\Assets\player.png
+E:\VisualStudio\Repositorio\ExtrateWares\bin\Debug\net7.0-windows\Assets\purple.png
+E:\VisualStudio\Repositorio\ExtrateWares\bin\Debug\net7.0-windows\ExtrateWares.exe
+E:\VisualStudio\Repositorio\ExtrateWares\bin\Debug\net7.0-windows\ExtrateWares.deps.json
+E:\VisualStudio\Repositorio\ExtrateWares\bin\Debug\net7.0-windows\ExtrateWares.runtimeconfig.json
+E:\VisualStudio\Repositorio\ExtrateWares\bin\Debug\net7.0-windows\ExtrateWares.dll
+E:\VisualStudio\Repositorio\ExtrateWares\bin\Debug\net7.0-windows\ExtrateWares.pdb
+E:\VisualStudio\Repositorio\ExtrateWares\obj\Debug\net7.0-windows\MainWindow.g.cs
+E:\VisualStudio\Repositorio\ExtrateWares\obj\Debug\net7.0-windows\App.g.cs
+E:\VisualStudio\Repositorio\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares_Content.g.cs
+E:\VisualStudio\Repositorio\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares_MarkupCompile.cache
+E:\VisualStudio\Repositorio\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares_MarkupCompile.lref
+E:\VisualStudio\Repositorio\ExtrateWares\obj\Debug\net7.0-windows\MainWindow.baml
+E:\VisualStudio\Repositorio\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.g.resources
+E:\VisualStudio\Repositorio\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.GeneratedMSBuildEditorConfig.editorconfig
+E:\VisualStudio\Repositorio\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.AssemblyInfoInputs.cache
+E:\VisualStudio\Repositorio\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.AssemblyInfo.cs
+E:\VisualStudio\Repositorio\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.csproj.CoreCompileInputs.cache
+E:\VisualStudio\Repositorio\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.dll
+E:\VisualStudio\Repositorio\ExtrateWares\obj\Debug\net7.0-windows\refint\ExtrateWares.dll
+E:\VisualStudio\Repositorio\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.pdb
+E:\VisualStudio\Repositorio\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.genruntimeconfig.cache
+E:\VisualStudio\Repositorio\ExtrateWares\obj\Debug\net7.0-windows\ref\ExtrateWares.dll
+E:\VisualStudio\Repositorio\ExtrateWares\obj\Debug\net7.0-windows\GameWindow.g.cs
+E:\VisualStudio\Repositorio\ExtrateWares\obj\Debug\net7.0-windows\GameWindow.baml
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\pantalla.png
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\placa base.png
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\procesador.png
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\ram.png
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\raton.png
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\ssd.png
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\teclado.png
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\player.png
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\ExtrateWares.exe
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\ExtrateWares.deps.json
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\ExtrateWares.runtimeconfig.json
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\ExtrateWares.dll
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\ExtrateWares.pdb
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\GameWindow.g.cs
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares_Content.g.cs
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares_MarkupCompile.cache
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares_MarkupCompile.lref
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\GameWindow.baml
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.g.resources
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.AssemblyInfoInputs.cache
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.AssemblyInfo.cs
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.csproj.CoreCompileInputs.cache
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.dll
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\refint\ExtrateWares.dll
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.pdb
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.genruntimeconfig.cache
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ref\ExtrateWares.dll
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\fondo_inicio.jpg
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\fondo1.png
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\fondo2.jpg
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\fondo3.jpg
+C:\Users\daw2t07\Desktop\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\nave_icono.ico
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\fondo2.jpg
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\fondo3.jpg
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\fondo_inicio.jpg
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\pantalla.png
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\placa base.png
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\procesador.png
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\ram.png
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\raton.png
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\ssd.png
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\teclado.png
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\nave_icono.ico
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\player.png
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\Assets\fondo1.png
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\ExtrateWares.exe
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\ExtrateWares.deps.json
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\ExtrateWares.runtimeconfig.json
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\ExtrateWares.dll
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\bin\Debug\net7.0-windows\ExtrateWares.pdb
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\GameWindow.g.cs
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares_Content.g.cs
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares_MarkupCompile.cache
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares_MarkupCompile.lref
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\GameWindow.baml
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.g.resources
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.dll
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\refint\ExtrateWares.dll
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.pdb
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\ExtrateWares\ExtrateWares\ExtrateWares\obj\Debug\net7.0-windows\ref\ExtrateWares.dll
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\bin\Debug\net7.0-windows\Assets\fondo2.jpg
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\bin\Debug\net7.0-windows\Assets\fondo3.jpg
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\bin\Debug\net7.0-windows\Assets\fondo_inicio.jpg
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\pantalla.png
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\placa base.png
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\procesador.png
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\ram.png
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\raton.png
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\ssd.png
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\bin\Debug\net7.0-windows\Assets\hardware\teclado.png
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\bin\Debug\net7.0-windows\Assets\nave_icono.ico
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\bin\Debug\net7.0-windows\Assets\player.png
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\bin\Debug\net7.0-windows\Assets\fondo1.png
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\bin\Debug\net7.0-windows\ExtrateWares.exe
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\bin\Debug\net7.0-windows\ExtrateWares.deps.json
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\bin\Debug\net7.0-windows\ExtrateWares.runtimeconfig.json
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\bin\Debug\net7.0-windows\ExtrateWares.dll
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\bin\Debug\net7.0-windows\ExtrateWares.pdb
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\obj\Debug\net7.0-windows\GameWindow.g.cs
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares_Content.g.cs
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares_MarkupCompile.cache
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares_MarkupCompile.lref
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\obj\Debug\net7.0-windows\GameWindow.baml
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.g.resources
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.dll
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\obj\Debug\net7.0-windows\refint\ExtrateWares.dll
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.pdb
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\obj\Debug\net7.0-windows\ExtrateWares.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\Proyecto WPF\ExtrateWares\obj\Debug\net7.0-windows\ref\ExtrateWares.dll
