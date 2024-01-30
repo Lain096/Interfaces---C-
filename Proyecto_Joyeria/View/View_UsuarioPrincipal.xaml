@@ -1,0 +1,178 @@
+﻿<Window x:Class="Proyecto_Joyeria.View.View_UsuarioPrincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto_Joyeria.View"
+        xmlns:fa ="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+        mc:Ignorable="d"
+        xmlns:vm="clr-namespace:Proyecto_Joyeria.ViewModel"
+        Title="View_UsuarioPrincipal" Height="450" Width="800"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ResizeMode="NoResize"
+        Background="Transparent">
+
+    <Window.DataContext>
+
+        <vm:ViewModelChanges/>
+    </Window.DataContext>
+
+
+
+    <Border Background="Transparent">
+
+        <Border CornerRadius="10" BorderThickness="3" >
+            <Border.BorderBrush>
+                <LinearGradientBrush 
+                        StartPoint="0,0"
+                         EndPoint="1,1">
+                    <GradientStop Color="Pink" Offset="0"/>
+                    <GradientStop Color="DeepPink" Offset="0.5"/>
+                    <GradientStop Color="HotPink" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            
+
+            <Grid>
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="170"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <!--  
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+                -->
+                
+           <!-- Border de navegacion-->
+                <Border CornerRadius="5, 0, 0, 5" Grid.Column="0" >
+                    <Border.Background>
+                        <SolidColorBrush Color="#FFEF8A9C"/>
+                    </Border.Background>
+
+                    <StackPanel>
+                        
+                        <!-- Logo(?)-->
+                        <StackPanel Orientation="Vertical" Height="65" Width="100" HorizontalAlignment="Left" Margin="20,25,0,0">
+                            <Image Source="../Assets/logo.png" Height="50" Width="50" Stretch="Uniform" HorizontalAlignment="Left"/>
+                            <!-- Meter Binding en el Text para el nombre del usuario-->
+                            <TextBlock Text="USUARIO" FontWeight="Medium" HorizontalAlignment="Left"/>
+
+                        </StackPanel>
+
+                        
+                        <!-- Botones de Menu-->
+                        <RadioButton Style="{StaticResource navegacion}"
+                                     Tag="AliceBlue" Command="{Binding UserControlCommand}" 
+                                     Click="btnMostrarCuenta">
+                            <StackPanel Orientation="Horizontal">
+                                <fa:IconImage Icon="User" Style="{StaticResource menuButtonIcon}" />
+                                <TextBlock Text="Mi Cuenta" Style="{StaticResource menuButtonText}" />
+                            </StackPanel>
+                            
+                        </RadioButton>
+                        <RadioButton Style="{StaticResource navegacion}"
+                                 Tag="AliceBlue" Command="{Binding UserReparationCommand}">
+                            <StackPanel Orientation="Horizontal">
+                                <fa:IconImage Icon="Toolbox" Style="{StaticResource menuButtonIcon}" />
+                                <TextBlock Text="Mis reparaciones" Style="{StaticResource menuButtonText}" TextWrapping="Wrap"/>
+                            </StackPanel>
+
+                        </RadioButton>
+
+                    </StackPanel>
+                              
+                </Border>
+
+
+                <Border CornerRadius="0, 5, 5, 0" Grid.Column="1" >
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Color="AliceBlue" Offset="1"/>
+                            <GradientStop Color="LightPink" Offset="0"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="10" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                   
+
+                        <StackPanel Name="crlPanel" 
+                                    Orientation="Horizontal" 
+                                    Grid.Column="0" 
+                                    FlowDirection="RightToLeft" 
+                                    Background="Transparent"
+                                    Margin="0,0,5,0"
+                                    MouseLeftButtonDown="crlPanel_MouseLeftButtonDown">
+
+
+                            <Button x:Name="btnClose"
+                                    Style="{StaticResource btnNavegacion}"
+                                    Tag="Red"
+                                    Click="btnClose_CloseButton"
+                                    Cursor="Hand">
+                                <fa:IconImage Icon="Xmark" Style="{StaticResource ctrlButtonIcon}"/>
+                            </Button>
+                            <Button x:Name="btnMinimize"
+                                     Style="{StaticResource btnNavegacion}"
+                                     Tag="Yellow"
+                                     Click="btnMinimize_MinimizeButton"
+                                     Cursor="Hand">
+                                <fa:IconImage Icon="WindowMinimize" Style="{StaticResource ctrlButtonIcon}"/>
+                            </Button>
+
+                        </StackPanel>
+                    <!-- 
+                         <Grid Grid.Row="1">
+                             <Grid.ColumnDefinitions>
+                                 <ColumnDefinition />
+                                 <ColumnDefinition />
+                             </Grid.ColumnDefinitions>
+
+
+                             <StackPanel Grid.Column="0"
+                                         Orientation="Horizontal"
+                                         VerticalAlignment="Center">
+                                 <fa:IconImage Icon="UserAlt" 
+                                               Height="30"
+                                               Width="30"
+                                               Foreground="AliceBlue"
+                                               Margin="10,0,10,0"/>
+                                 <TextBlock Text="User" VerticalAlignment="Center" 
+                                            FontWeight="Medium"
+                                            FontSize="16"/>
+
+                             </StackPanel>
+     
+     
+                         </Grid>
+                        
+                        -->
+                       
+
+                        <ContentControl Content="{Binding CurrentView}" Grid.Row="2" Margin="25">
+                            
+                            
+                            
+                        </ContentControl>
+                    </Grid>
+
+                </Border>
+            </Grid>
+
+
+        </Border>
+        
+        
+        
+        
+        
+    </Border>
+</Window>

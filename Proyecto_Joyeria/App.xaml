@@ -1,0 +1,25 @@
+﻿<Application x:Class="Proyecto_Joyeria.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Proyecto_Joyeria"
+             xmlns:vm="clr-namespace:Proyecto_Joyeria.ViewModel"
+             xmlns:v="clr-namespace:Proyecto_Joyeria.View"
+             StartupUri="View/View_Login.xaml">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary  Source="/Styles/ButtonStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <DataTemplate DataType="{x:Type vm:ViewModelUserControl}">
+                <v:View_UserControl/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:ViewModelReparationControl}">
+                <v:View_ReparationControl/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:ViewModelUsersAdminControl}">
+                <v:View_AdminUsers/>
+            </DataTemplate>               
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

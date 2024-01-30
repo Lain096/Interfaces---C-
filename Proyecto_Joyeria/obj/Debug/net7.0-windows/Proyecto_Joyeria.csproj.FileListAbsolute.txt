@@ -1,0 +1,156 @@
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.exe
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.deps.json
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.runtimeconfig.json
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.dll
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.pdb
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_Login.g.cs
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\App.g.cs
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria_MarkupCompile.cache
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria_MarkupCompile.lref
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_Login.baml
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.g.resources
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.GeneratedMSBuildEditorConfig.editorconfig
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.AssemblyInfoInputs.cache
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.AssemblyInfo.cs
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.csproj.CoreCompileInputs.cache
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.dll
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\refint\Proyecto_Joyeria.dll
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.pdb
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.genruntimeconfig.cache
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\ref\Proyecto_Joyeria.dll
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\bin\Debug\net7.0-windows\Assets\logo.png
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria_Content.g.cs
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\bin\Debug\net7.0-windows\Assets\pass.png
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\bin\Debug\net7.0-windows\Assets\user.png
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_UsuarioPrincipal.g.cs
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_UsuarioPrincipal.baml
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\bin\Debug\net7.0-windows\FontAwesome.Sharp.dll
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.csproj.AssemblyReference.cache
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\App.baml
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.csproj.CopyComplete
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_ReparationControl.g.cs
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_UserControl.g.cs
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_ReparationControl.baml
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_UserControl.baml
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\bin\Debug\net7.0-windows\Assets\logo.png
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\bin\Debug\net7.0-windows\Assets\pass.png
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\bin\Debug\net7.0-windows\Assets\user.png
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.exe
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.deps.json
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.runtimeconfig.json
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.dll
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.pdb
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\bin\Debug\net7.0-windows\FontAwesome.Sharp.dll
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_Login.g.cs
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_ReparationControl.g.cs
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_UserControl.g.cs
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_UsuarioPrincipal.g.cs
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria_Content.g.cs
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria_MarkupCompile.cache
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria_MarkupCompile.lref
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\App.baml
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_Login.baml
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_ReparationControl.baml
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_UserControl.baml
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_UsuarioPrincipal.baml
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.g.resources
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.dll
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\refint\Proyecto_Joyeria.dll
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.pdb
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\ref\Proyecto_Joyeria.dll
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\bin\Debug\net7.0-windows\Assets\logo.png
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\bin\Debug\net7.0-windows\Assets\pass.png
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\bin\Debug\net7.0-windows\Assets\user.png
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.exe
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.deps.json
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.runtimeconfig.json
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.dll
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.pdb
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\bin\Debug\net7.0-windows\FontAwesome.Sharp.dll
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.csproj.AssemblyReference.cache
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_Login.g.cs
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_ReparationControl.g.cs
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_UserControl.g.cs
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_UsuarioPrincipal.g.cs
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\App.g.cs
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria_Content.g.cs
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria_MarkupCompile.cache
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria_MarkupCompile.lref
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\App.baml
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_Login.baml
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_ReparationControl.baml
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_UserControl.baml
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_UsuarioPrincipal.baml
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.g.resources
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.GeneratedMSBuildEditorConfig.editorconfig
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.AssemblyInfoInputs.cache
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.AssemblyInfo.cs
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.csproj.CoreCompileInputs.cache
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.csproj.CopyComplete
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.dll
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\refint\Proyecto_Joyeria.dll
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.pdb
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.genruntimeconfig.cache
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\ref\Proyecto_Joyeria.dll
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_AdminPrincipal.g.cs
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_AdminUsers.g.cs
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\bin\Debug\net7.0-windows\MySqlConnector.dll
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_AdminPrincipal.baml
+E:\VisualStudio\Repositorio\Proyecto_Joyeria\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_AdminUsers.baml
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\bin\Debug\net7.0-windows\Assets\logo.png
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\bin\Debug\net7.0-windows\Assets\pass.png
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\bin\Debug\net7.0-windows\Assets\user.png
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.exe
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.deps.json
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.runtimeconfig.json
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.dll
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.pdb
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\bin\Debug\net7.0-windows\FontAwesome.Sharp.dll
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\bin\Debug\net7.0-windows\MySqlConnector.dll
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.csproj.AssemblyReference.cache
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_AdminPrincipal.g.cs
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_AdminUsers.g.cs
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_Login.g.cs
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_ReparationControl.g.cs
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_UserControl.g.cs
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_UsuarioPrincipal.g.cs
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria_Content.g.cs
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria_MarkupCompile.cache
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria_MarkupCompile.lref
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\App.baml
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_AdminPrincipal.baml
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_AdminUsers.baml
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_Login.baml
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_ReparationControl.baml
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_UserControl.baml
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_UsuarioPrincipal.baml
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.g.resources
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.AssemblyInfoInputs.cache
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.AssemblyInfo.cs
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.csproj.CoreCompileInputs.cache
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.csproj.CopyComplete
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.dll
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\refint\Proyecto_Joyeria.dll
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.pdb
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.genruntimeconfig.cache
+C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\ref\Proyecto_Joyeria.dll
