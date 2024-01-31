@@ -1,0 +1,87 @@
+﻿<Window x:Class="WPF_MVVM_CRUD.Views.dgProducto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_MVVM_CRUD.Views"
+        mc:Ignorable="d"
+        Title="dgProducto" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="600"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+            <Label Content="Buscar:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" FontSize="20"/>
+            <TextBox x:Name="txtCampo" Margin="10,34,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="340" FontSize="20"/>
+            <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Left" Margin="10,33,0,0" 
+             VerticalAlignment="Top" FontSize="20" Click="btnBuscar_Click"/>
+        </StackPanel>
+        <DataGrid Grid.Row="1" Grid.Column="0" AutoGenerateColumns="True" Width="550"
+           Name="dataGrid1" Margin="10,10,10,10" HorizontalAlignment="Left"
+           IsReadOnly="true"
+           AlternatingRowBackground="LightBlue"
+           CanUserReorderColumns="False" CanUserResizeColumns="False"
+           VerticalAlignment="Top" ColumnWidth="Auto">
+            <DataGrid.CellStyle>
+                <Style/>
+            </DataGrid.CellStyle>
+        </DataGrid>
+        <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
+            <Button x:Name="btnModificar" HorizontalAlignment="Left" 
+                 Padding="2,2,2,2" FontSize="20"
+                 Margin="40,10,10,20" Click="btnModificar_Click">Modificar</Button>
+            <Button x:Name="btnEliminar" HorizontalAlignment="Right"
+             Margin="10,10,0,20" FontSize="20"
+             Padding="2,2,2,2" Click="btnEliminar_Click">Eliminar</Button>
+        </StackPanel>
+        <GroupBox Grid.Row="0" Grid.Column="1" Grid.RowSpan="3"
+           Margin="20,20,20,20">
+            <GroupBox.Header>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock>Datos Producto</TextBlock>
+                </StackPanel>
+            </GroupBox.Header>
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Código:" HorizontalAlignment="Left" Height="30" Width="80"/>
+                    <TextBox x:Name="txtCodigo"
+                 HorizontalAlignment="Right" Width="130" Margin="10,10,2,10"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Nombre:" HorizontalAlignment="Left" Height="30" Width="80"/>
+                    <TextBox x:Name="txtNombre"
+                 HorizontalAlignment="Right" Width="130" Margin="10,10,10,10"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Descripción:" HorizontalAlignment="Left" VerticalAlignment="Top"
+                    Height="30" Width="80" Margin="0,10,0,0"/>
+                    <TextBox x:Name="txtDescripcion"
+                 HorizontalAlignment="Right" Width="130" Height="80" Margin="10,10,10,10"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Precio:" HorizontalAlignment="Left" Height="30" Width="80"/>
+                    <TextBox x:Name="txtPrecio" TextAlignment="Right"
+                 HorizontalAlignment="Right" Width="130" Margin="10,10,10,10"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Existencias:" HorizontalAlignment="Left" Height="30" Width="80"/>
+                    <TextBox x:Name="txtExistencias" TextAlignment="Right"
+                 HorizontalAlignment="Right" Width="130" Margin="10,10,10,10"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Width="250">
+                    <Button x:Name="btnGuardar" HorizontalAlignment="Left" Margin="20,20,40,20" 
+                     FontSize="20" Click="btnGuardar_Click">Guardar</Button>
+                    <Button x:Name="btnLimpiar" HorizontalAlignment="Right" Margin="20,20,0,20" 
+                     FontSize="20" Click="btnLimpiar_Click">Limpiar</Button>
+                </StackPanel>
+            </StackPanel>
+
+        </GroupBox>
+    </Grid>
+</Window>

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\
 Proyecto_Joyeria
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\App.xaml
+D:\Git\Interfaces\Proyecto_Joyeria\App.xaml
 7-545923103
 3157946334
 23-538611941
 210-895109748
 Styles\ButtonStyles.xaml;View\View_AdminPrincipal.xaml;View\View_AdminUsers.xaml;View\View_Login.xaml;View\View_ReparationControl.xaml;View\View_UserControl.xaml;View\View_UsuarioPrincipal.xaml;
 
-True
+False
 

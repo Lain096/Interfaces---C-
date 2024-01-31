@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\daw2t07\\Desktop\\Proyecto_Joyeria (1)\\Proyecto_Joyeria\\Proyecto_Joyeria.csproj": {}
+    "D:\\Git\\Interfaces\\Proyecto_Joyeria\\Proyecto_Joyeria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\daw2t07\\Desktop\\Proyecto_Joyeria (1)\\Proyecto_Joyeria\\Proyecto_Joyeria.csproj": {
+    "D:\\Git\\Interfaces\\Proyecto_Joyeria\\Proyecto_Joyeria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\daw2t07\\Desktop\\Proyecto_Joyeria (1)\\Proyecto_Joyeria\\Proyecto_Joyeria.csproj",
+        "projectUniqueName": "D:\\Git\\Interfaces\\Proyecto_Joyeria\\Proyecto_Joyeria.csproj",
         "projectName": "Proyecto_Joyeria",
-        "projectPath": "C:\\Users\\daw2t07\\Desktop\\Proyecto_Joyeria (1)\\Proyecto_Joyeria\\Proyecto_Joyeria.csproj",
+        "projectPath": "D:\\Git\\Interfaces\\Proyecto_Joyeria\\Proyecto_Joyeria.csproj",
         "packagesPath": "C:\\Users\\daw2t07\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\daw2t07\\Desktop\\Proyecto_Joyeria (1)\\Proyecto_Joyeria\\obj\\",
+        "outputPath": "D:\\Git\\Interfaces\\Proyecto_Joyeria\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\daw2t07\\AppData\\Roaming\\NuGet\\NuGet.Config",

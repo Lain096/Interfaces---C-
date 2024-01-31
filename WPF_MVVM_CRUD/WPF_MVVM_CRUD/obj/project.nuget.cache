@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "PPKUOHn7Ymr9OKlxJ+dxdCMywsEFcnmHH5Pqw1239Zv1KCIldWz3TS+bN+mUzRvovix2vSrKQYOtHaijdLiB0g==",
+  "success": true,
+  "projectFilePath": "D:\\reposVSNET\\WPF_MVVM_CRUD\\WPF_MVVM_CRUD\\WPF_MVVM_CRUD.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\diaga\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "C:\\Users\\diaga\\.nuget\\packages\\mysqlconnector\\2.3.3\\mysqlconnector.2.3.3.nupkg.sha512"
+  ],
+  "logs": []
+}

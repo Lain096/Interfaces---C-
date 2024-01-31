@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -32,67 +33,89 @@ namespace Proyecto_Joyeria.Model
 
             if (mp != null)
             {
-
-
-                MySqlConnection conn = CreateConnection.obtenerConexionAbierta();
-
-
-                if (conn == null)
+                try
                 {
-                    throw new Exception("Error en la conexión de la base de datos");
-                }
-                else
-                {
-                    try
+
+                    MySqlConnection conn = CreateConnection.obtenerConexionAbierta();
+
+
+                    if (conn == null)
                     {
-                        string sql = "SELECT * FROM PERSONAS WHERE user = @user";
-
-                        using var command = new MySqlCommand(sql, conn);    
-                        command.Parameters.AddWithValue("@user", name);
-                        command.Prepare();
-
-                        using var reader = command.ExecuteReader();
-
-                        if (reader.HasRows)
+                        throw new Exception("Error en la conexión de la base de datos");
+                    }
+                    else
+                    {
+                        try
                         {
-                            while (reader.Read())
-                            {
+                            string sql = "SELECT * FROM PERSONAS WHERE user = @user";
 
-                                mp.Id = reader.GetInt32(0);
-                                mp.Name = reader.GetString(1);
-                                mp.Pass = reader.GetString(2);
-                                mp.Email = reader.GetString(3);
+                            using var command = new MySqlCommand(sql, conn);
+                            command.Parameters.AddWithValue("@user", name);
+                            command.Prepare();
+
+                            using var reader = command.ExecuteReader();
+
+                            if (reader.HasRows)
+                            {
+                                while (reader.Read())
+                                {
+
+                                    mp.Id = reader.GetInt32(0);
+                                    mp.Name = reader.GetString(1);
+                                    mp.Pass = reader.GetString(2);
+                                    mp.Email = reader.GetString(3);
+                                }
+
+
+                            }
+                            else
+                            {
+                                throw new Exception("No se encontraron usuarios")
                             }
 
-
                         }
-                        else
+                        catch (InvalidOperationException ex)
                         {
-                            throw new 
+                            throw new Exception("Error de conexion " + ex.Message);
                         }
-
-
-
-
-
-
-
-                    }
-                    catch (MySqlException ex)
-                    {
-                        throw new Exception("Error de conexion " + ex.Message);
                     }
                 }
+                catch (MySqlException e)
+                {
+                    throw new Exception("No se pudo buscar en la base de datos")
+                }
+                finally
+                {
+                    CreateConnection.cerrarConexion();
+                }
+
+                return mp;
+
+            }
+            return null;
+        }
+
+
+        public bool insertPersonas(Model_Person person)
+        {
+
+            bool insertada = false;
+
+            try
+            {
+                // CAmpso de las personas
 
 
 
 
+            }catch(Exception e)
+            {
+                throw new Exception("error en la base de datos");
             }
 
 
+            return false;
 
-
-            return null;
         }
     }
 }
