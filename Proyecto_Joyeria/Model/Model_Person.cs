@@ -12,19 +12,88 @@ using System.Windows.Navigation;
 
 namespace Proyecto_Joyeria.Model
 {
+    public class PersonaCollection : ObservableCollection<Model_Person>
+    {
+
+        public PersonaCollection listaUsuarios()
+        {
+
+            PersonaCollection personaCollection = new PersonaCollection();
+            MySqlConnection connection = CreateConnection.obtenerConexionAbierta();
+
+            try
+            {
+
+                if (connection == null)
+                {
+                    throw new Exception("Error en la conexion, no se ha podido establecer");
+                }
+                else
+                {
+                    try
+                    {
+                        string sql = "SELECT p.idPersonas, p.user, p.email, r.isAdmin FROM PERSONAS p, PERFIL r";
+
+                        using var command = new MySqlCommand(sql, connection);
+                        using var reader = command.ExecuteReader();
+
+                        if (reader.HasRows)
+                        {
+                            while (reader.Read())
+                            {
+                                personaCollection.Add(new Model_Person()
+                                {
+                                    Id = reader.GetInt32(0),
+                                    Name = reader.GetString(1),
+                                    Email = reader.GetString(2),
+                                    IsAdmin = reader.GetBoolean(3)
+                                }
+                                    );
+
+
+                            }
+
+                        }
+                        return personaCollection;
+
+
+
+
+                    }
+                    catch (MySqlException e)
+                    {
+                        throw new Exception("Error al ejecutar la consulta");
+                    }
+                }
+
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error en la base de datos");
+            }
+            finally
+            {
+                connection.Close();
+           }
+     }
+
+   }
+
+
+
     public class Model_Person
     {
         private int _id;
         private string _name;
         private string _pass;
         private string _email;
+        private bool isAdmin;
 
         public int Id { get => _id; set => _id = value; }
         public string Name { get => _name; set => _name = value; }
         public string Pass { get => _pass; set => _pass = value; }
         public string Email { get => _email; set => _email = value; }
-
-
+        public bool IsAdmin { get => isAdmin; set => isAdmin = value; }
 
         public Model_Person buscarPersona(string name)
         {
@@ -47,7 +116,7 @@ namespace Proyecto_Joyeria.Model
                     {
                         try
                         {
-                            string sql = "SELECT * FROM PERSONAS WHERE user = @user";
+                            string sql = "SELECT * FROM PERSONAS WHERE user = @user LIMIT 1";
 
                             using var command = new MySqlCommand(sql, conn);
                             command.Parameters.AddWithValue("@user", name);
@@ -93,17 +162,25 @@ namespace Proyecto_Joyeria.Model
 
             }
             return null;
-        }
+        } 
 
-
-        public bool insertPersonas(Model_Person person)
+        public bool insertPersona(Model_Person person)
         {
 
             bool insertada = false;
 
             try
             {
+
+              //  if (person.Id !=)
+               // {
+
+               // }
+
                 // CAmpso de las personas
+                
+
+
 
 
 
@@ -117,5 +194,118 @@ namespace Proyecto_Joyeria.Model
             return false;
 
         }
+
+        public bool eliminarPersona(Model_Person person)
+        {
+            bool encontrado = false;
+            try
+            {
+
+                MySqlConnection connect = CreateConnection.obtenerConexionAbierta();
+
+                if (connect == null)
+                {
+                    throw new Exception("No se ha podido establecer conexion");
+                }
+                else
+                {
+
+                    try
+                    {
+                        string sql = " DELETE FROM PERSONA WHERE IdPersona = @id";
+
+                        using var command = new MySqlCommand(sql, connect);
+
+                        command.Parameters.AddWithValue("@id", person.Id);   
+                        command.Prepare();
+
+
+                        command.ExecuteNonQuery();
+
+                        encontrado = true;
+                        return encontrado;
+                                           
+                    }
+                    catch (MySqlException e)
+                    {
+                        throw new Exception("No se ha podido eliminar a la persona");
+                    }
+                    
+
+
+                }
+
+
+
+            }
+            catch (Exception e)
+            {
+                throw new Exception("ERROR");
+            }
+            finally
+            {
+                CreateConnection.cerrarConexion();
+            }
+
+
+            return false;
+        }
+
+        #region buscarId
+        public int? ultimoId()
+        {
+
+           
+            
+            try
+            {
+                MySqlConnection connection = CreateConnection.obtenerConexionAbierta();
+
+                if (connection == null)
+                {
+                    throw new Exception("Fallo en conexion de BdD");
+                }
+                else
+                {
+                    String sql = "SELECT * FROM PERSONAS ORDER BY IdPersonas DESC LIMIT 1";
+
+                    using var command = new MySqlCommand(sql, connection);  
+                    command.ExecuteNonQuery();
+
+                    using var reader = command.ExecuteReader();
+
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {
+                        return reader.GetInt32(0); 
+
+                        }
+
+                    }
+                    else
+                    {
+                        throw new Exception("No se encontraro Id's");
+                    }
+                    
+
+                }
+
+            }catch(Exception e)
+            {
+                throw new Exception("No hay empleados");
+            }
+            finally
+            {
+                
+                CreateConnection.cerrarConexion();
+
+            }
+            return null;
+
+        }
+
+        #endregion buscarId
+
     }
 }
