@@ -32,10 +32,10 @@ namespace Proyecto_Joyeria.Model
                 {
                     try
                     {
-                        string sql = "SELECT p.idPersonas, p.user, p.email, r.isAdmin FROM PERSONAS p, PERFIL r";
+                        string sql = "SELECT p.idPersonas, p.user, p.email, r.isAdmin FROM PERSONAS p, PERFIL r WHERE p.idPersonas = r.idPersonas";
 
                         using var command = new MySqlCommand(sql, connection);
-                        using var reader = command.ExecuteReader();
+                         var reader = command.ExecuteReader();
 
                         if (reader.HasRows)
                         {
@@ -67,9 +67,9 @@ namespace Proyecto_Joyeria.Model
                 }
 
             }
-            catch (MySqlException e)
+            catch (InvalidOperationException e)
             {
-                throw new Exception("Error en la base de datos");
+                throw new Exception("Error en la base de datos: " + e.Message);
             }
             finally
             {
@@ -83,16 +83,16 @@ namespace Proyecto_Joyeria.Model
 
     public class Model_Person
     {
-        private int _id;
-        private string _name;
-        private string _pass;
-        private string _email;
+        private int id;
+        private string name;
+        private string pass;
+        private string email;
         private bool isAdmin;
 
-        public int Id { get => _id; set => _id = value; }
-        public string Name { get => _name; set => _name = value; }
-        public string Pass { get => _pass; set => _pass = value; }
-        public string Email { get => _email; set => _email = value; }
+        public int Id { get => id; set => id = value; }
+        public string Name { get => name; set => name = value; }
+        public string Pass { get =>pass; set => pass = value; }
+        public string Email { get => email; set => email = value; }
         public bool IsAdmin { get => isAdmin; set => isAdmin = value; }
 
         public Model_Person buscarPersona(string name)
@@ -139,7 +139,7 @@ namespace Proyecto_Joyeria.Model
                             }
                             else
                             {
-                                throw new Exception("No se encontraron usuarios")
+                                throw new Exception("No se encontraron usuarios");
                             }
 
                         }
@@ -151,7 +151,7 @@ namespace Proyecto_Joyeria.Model
                 }
                 catch (MySqlException e)
                 {
-                    throw new Exception("No se pudo buscar en la base de datos")
+                    throw new Exception("No se pudo buscar en la base de datos");
                 }
                 finally
                 {

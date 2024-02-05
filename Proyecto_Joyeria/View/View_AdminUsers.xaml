@@ -46,7 +46,11 @@
 
             </StackPanel>
 
-            <DataGrid Name="dataGridAdmin"  Background="Transparent" Grid.Column="1" Grid.Row="3" ItemsSource="{Binding }">
+            <DataGrid Name="dataGridAdmin"  
+                      Background="Transparent"
+                      Grid.Column="1" 
+                      Grid.Row="3"
+                      >
 
                 <DataGrid.Resources>
                     <Style TargetType="{x:Type DataGridColumnHeader}">
@@ -54,21 +58,27 @@
                         <Setter Property="Margin" Value="10,2,0,0" />
                         <Setter Property="FontSize" Value="20"/>
                     </Style>
-                    <!--   
-                    <Style TargetType="{x:Type DataGridCell}">
-                        <Setter Property="Background" Value="AliceBlue"/>
-                        <Setter Property="Margin" Value="10,0,0,0" />
-                        <Setter Property="FontSize" Value="15"/>
-                    </Style>
-                    -->
+                   
                 </DataGrid.Resources>
-                                    
-                <DataGrid.Columns>
+
+                <!--<DataGridCell>
+                    <DataGridCellsPresenter Background="Transparent"/>
+                </DataGridCell>-->
+
+                <!--<DataGrid.Columns>
+                    <DataGridTextColumn Width="50"/>
+                    <DataGridTextColumn Width="150"/>
+                    <DataGridTextColumn Width="*"/>
+                    <DataGridTextColumn Width="100"/>
+                </DataGrid.Columns>-->
+
+                <!--<DataGrid.Columns>
                     <DataGridTextColumn Header="Id" Width="50"/>
                     <DataGridTextColumn Header="Usuario" Width="150"/>
                     <DataGridTextColumn Header="Correo Electrónico" Width="*"/>
                     <DataGridTextColumn Header="Admin" Width="100"/>
-                </DataGrid.Columns>
+                </DataGrid.Columns>-->
+                
                 
                 
                 

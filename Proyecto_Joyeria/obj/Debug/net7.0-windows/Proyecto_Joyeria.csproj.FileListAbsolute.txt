@@ -154,3 +154,46 @@ C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-
 C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.pdb
 C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.genruntimeconfig.cache
 C:\Users\daw2t07\Desktop\Proyecto_Joyeria (1)\Proyecto_Joyeria\obj\Debug\net7.0-windows\ref\Proyecto_Joyeria.dll
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.csproj.AssemblyReference.cache
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_AdminPrincipal.g.cs
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_AdminUsers.g.cs
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_Login.g.cs
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_ReparationControl.g.cs
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_UserControl.g.cs
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_UsuarioPrincipal.g.cs
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\App.g.cs
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria_Content.g.cs
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria_MarkupCompile.cache
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria_MarkupCompile.lref
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.dll
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\refint\Proyecto_Joyeria.dll
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.pdb
+D:\Git\Interfaces\Proyecto_Joyeria\bin\Debug\net7.0-windows\Assets\logo.png
+D:\Git\Interfaces\Proyecto_Joyeria\bin\Debug\net7.0-windows\Assets\pass.png
+D:\Git\Interfaces\Proyecto_Joyeria\bin\Debug\net7.0-windows\Assets\user.png
+D:\Git\Interfaces\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.exe
+D:\Git\Interfaces\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.deps.json
+D:\Git\Interfaces\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.runtimeconfig.json
+D:\Git\Interfaces\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.dll
+D:\Git\Interfaces\Proyecto_Joyeria\bin\Debug\net7.0-windows\Proyecto_Joyeria.pdb
+D:\Git\Interfaces\Proyecto_Joyeria\bin\Debug\net7.0-windows\FontAwesome.Sharp.dll
+D:\Git\Interfaces\Proyecto_Joyeria\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Git\Interfaces\Proyecto_Joyeria\bin\Debug\net7.0-windows\MySqlConnector.dll
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\App.baml
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_AdminPrincipal.baml
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_AdminUsers.baml
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_Login.baml
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_ReparationControl.baml
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_UserControl.baml
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\View\View_UsuarioPrincipal.baml
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.g.resources
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.AssemblyInfoInputs.cache
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.AssemblyInfo.cs
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.csproj.CoreCompileInputs.cache
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.sourcelink.json
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.csproj.CopyComplete
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\Proyecto_Joyeria.genruntimeconfig.cache
+D:\Git\Interfaces\Proyecto_Joyeria\obj\Debug\net7.0-windows\ref\Proyecto_Joyeria.dll

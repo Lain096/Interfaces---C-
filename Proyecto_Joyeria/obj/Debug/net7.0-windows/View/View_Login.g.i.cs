@@ -102,7 +102,7 @@ namespace Proyecto_Joyeria {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Proyecto_Joyeria;V1.0.0.0;component/view/view_login.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Proyecto_Joyeria;component/view/view_login.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\View_Login.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

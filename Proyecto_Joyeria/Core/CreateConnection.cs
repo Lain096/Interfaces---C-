@@ -14,9 +14,9 @@ namespace Proyecto_Joyeria.Core
         private static MySqlConnection conn = null;
         private static String SERVIDOR = "localhost";
         private static uint PUERTO = 3306;
-        private static String BD = "Joyeria";
+        private static String BD = "mydb";
         private static String USUARIO = "root";
-        private static String PASSWORD = "admin";
+        private static String PASSWORD = "bollicao";
 
         private CreateConnection()
         {
