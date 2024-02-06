@@ -77,9 +77,134 @@ namespace Proyecto_Joyeria.Model
            }
      }
 
-   }
+
+        public PersonaCollection consultarUsuario(string? dato)
+        {
+            PersonaCollection personaCollection = new PersonaCollection();
+
+            try
+            {
+                MySqlConnection connection = CreateConnection.obtenerConexionAbierta();
+
+                if (connection == null)
+                {
+                    throw new Exception("No hay base de datos que consultar");
+                }
+                else
+                {
+                    try
+                    {
+                        string sql = " ";
+                        if (dato != null)
+                        {
+                            sql = "SELECT p.idPersonas, p.user, p.email, r.isAdmin FROM PERSONAS p, PERFIL r " +
+                                "WHERE p.idPersonas = r.idPersonas AND (p.idPersonas LIKE @dato OR p.user LIKE @dato OR " +
+                                "p.email LIKE @dato)";
+                        }
+                        else
+                        {
+                            listaUsuarios();
+                        }
+
+                        using var command = new MySqlCommand(sql, connection);
+                        command.Parameters.AddWithValue("@dato", "%" + dato);
+                        command.Prepare();
+
+                        using var reader = command.ExecuteReader();
+
+                        if (reader.HasRows)
+                        {
+                            while (reader.Read())
+                            {
+                                personaCollection.Add(new Model_Person() {
+
+                                Id = reader.GetInt32(0),
+                                Name = reader.GetString(1),
+                                Email = reader.GetString(2),
+                                IsAdmin = reader.GetBoolean(3)
+                            });
+
+                            }
+
+                        }
+                        else
+                        {
+                            throw new Exception("No se han encontrado usuarios");
+                        }
+
+                    }
+                    catch (InvalidOperationException e)
+                    {
+                        throw new Exception("Problemas al buscar usuarios");
+                    }
+                }
+            }catch(MySqlException e)
+            {
+                throw new Exception("Problemas en todo");
+            }
+
+            return personaCollection;
+        }
+   
+
+    public PersonaCollection comprobarLogIn(string user, string pass)
+    {
+        MySqlConnection connec = CreateConnection.obtenerConexionAbierta();
+        PersonaCollection personaCollection = new PersonaCollection();
+
+        try
+        {
+            string sql = "SELECT p.idPersonas, p.user, p.pass, p.email , r.isAdmin FROM PERSONAS p, PERFIL r " +
+                                    "WHERE p.idPersonas = r.idPersonas AND p.user LIKE @user AND p.pass LIKE @pass";
+
+            using var command = new MySqlCommand(sql, connec);
+            command.Parameters.AddWithValue("@user", user);
+            command.Parameters.AddWithValue("@pass", pass);
+
+            using var reader = command.ExecuteReader();
+
+            try
+            {
+                if (reader.HasRows)
+                {
+                    Model_Person p = new Model_Person();
+
+                    while (reader.Read())
+                    {
+                        p.Id = reader.GetInt32(0);
+                        p.Name = reader.GetString(1);
+                        p.Pass = reader.GetString(2);
+                        p.Email = reader.GetString(3);
+                        p.IsAdmin = reader.GetBoolean(4);
+
+                        personaCollection.Add(p);
+
+                    }
+
+                    return personaCollection;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (InvalidOperationException e)
+            {
+                return null;
+            }
 
 
+        }
+        catch (MySqlException e)
+        {
+            throw new Exception("ERROR FATAL");
+        }
+        return null;
+    }
+
+
+
+    }
 
     public class Model_Person
     {
@@ -309,3 +434,4 @@ namespace Proyecto_Joyeria.Model
 
     }
 }
+

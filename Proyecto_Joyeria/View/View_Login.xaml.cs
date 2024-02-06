@@ -1,4 +1,5 @@
 ﻿using Proyecto_Joyeria.View;
+using Proyecto_Joyeria.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,8 +47,23 @@ namespace Proyecto_Joyeria
 
         private void CLick_CheckUser(object sender, RoutedEventArgs e)
         {
-           View_AdminPrincipal admin = new View_AdminPrincipal();   
-            admin.Show();
+            string user = txtID.Text;
+            string pass = txtPass.ToString();
+
+           ViewModelLogIn vmlog = new ViewModelLogIn();
+
+            if (vmlog.isAdminOrUser(user, pass))
+            {
+             View_AdminPrincipal admin = new View_AdminPrincipal();   
+                        admin.Show();
+            }
+            else
+            {
+                View_UsuarioPrincipal windowUser = new View_UsuarioPrincipal();
+                windowUser.Show();
+            }
+
+          
 
         }
 

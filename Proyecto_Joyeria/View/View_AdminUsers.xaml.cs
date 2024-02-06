@@ -35,16 +35,15 @@ namespace Proyecto_Joyeria.View
             //dt.Columns.Add("isAdmin");
 
 
-
             //dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Id", Width = 50 });
-            //dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Usuario",  Width = 150 });
-            //dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Correo Electrónico", Width = new DataGridLength(1, DataGridLengthUnitType.Star) });
+            //dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Usuario", Width = 150 });
+            //dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Email", Width = new DataGridLength(1, DataGridLengthUnitType.Star) });
             //dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Admin", Width = 100 });
 
-            dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Id", Width = 50, Binding = new Binding("Id") });
-            dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Usuario", Width = 150, Binding = new Binding("Name") });
-            dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Correo Electrónico", Width = new DataGridLength(1, DataGridLengthUnitType.Star), Binding = new Binding("Email") });
-            dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Admin", Width = 100, Binding = new Binding("IsAdmin") });
+            //dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Id", Width = 50, Binding = new Binding("Id") });
+            //dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Usuario", Width = 150, Binding = new Binding("Name") });
+            //dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Correo Electrónico", Width = new DataGridLength(1, DataGridLengthUnitType.Star), Binding = new Binding("Email") });
+            //dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Admin", Width = 100, Binding = new Binding("IsAdmin") });
 
             dataGridAdmin.ItemsSource = null;
             dataGridAdmin.IsReadOnly = true;
@@ -60,29 +59,29 @@ namespace Proyecto_Joyeria.View
 
 
 
-            foreach (Model_Person p in pc)
-            {
+            //foreach (Model_Person p in pc)
+            //{
 
-                //DataRow row = dt.NewRow();
+            //    //DataRow row = dt.NewRow();
 
-                //row["idPersonas"] = p.Id;
-                //row["Nombre"] = p.Name;
-                //row["Email"] = p.Email;
-                //row["isAdmin"] = p.IsAdmin;
+            //    //row["Id"] = p.Id;
+            //    //row["Nombre"] = p.Name;
+            //    //row["Email"] = p.Email;
+            //    //row["Admin"] = p.IsAdmin;
+            //    //dt.Rows.Add(row);
 
-              
+
+            //    dt.Rows.Add
+            //    (
+            //        p.Id,
+            //        p.Name,
+            //        p.Email,
+            //        p.IsAdmin
+            //     );
 
 
-                //dt.Rows.Add(row);
-                //dt.Rows.Add
-                //(
-                //    p.Id,
-                //    p.Name,
-                //    p.Email,
-                //    p.IsAdmin
-                // );
 
-            }
+            //}
             dataGridAdmin.ItemsSource =pc;
 
 
