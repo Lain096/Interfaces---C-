@@ -111,6 +111,14 @@ namespace Proyecto_Joyeria.ViewModel
             return collection;
         }
 
+        public PersonaCollection buscarUsuario(String dato)
+        {
+            PersonaCollection collection = new PersonaCollection();
+            collection = collection.consultarUsuario(dato);
+
+            return collection;
+        }
+
 
    
     

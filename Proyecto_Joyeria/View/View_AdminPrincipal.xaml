@@ -55,8 +55,8 @@
                         <!-- Logo(?)-->
                         <StackPanel Orientation="Vertical" Height="65" Width="100" HorizontalAlignment="Left" Margin="20,25,0,0">
                             <Image Source="../Assets/logo.png" Height="50" Width="50" Stretch="Uniform" HorizontalAlignment="Left"/>
-                            <!-- Meter Binding en el Text para el nombre del usuario-->
-                            <TextBlock Text="USUARIO" FontWeight="Medium" HorizontalAlignment="Left"/>
+                            <!-- Meter que el text sea igual al nombre del usuario-->
+                            <TextBlock Name="userName" Text="USUARIO" FontWeight="Medium" HorizontalAlignment="Left"/>
 
                         </StackPanel>
 

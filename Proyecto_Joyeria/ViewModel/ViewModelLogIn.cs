@@ -20,29 +20,38 @@ namespace Proyecto_Joyeria.ViewModel
 
             personaCollection = personaCollection.comprobarLogIn(name, pass);
 
+
             if (personaCollection != null && personaCollection.Count == 1)
             {
                 Model_Person mp = new Model_Person();
+
                 foreach (Model_Person p in personaCollection)
                 {
                     mp = p;
-                }
 
-                if (mp.IsAdmin)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
 
+                    if (p.IsAdmin)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+
+                }
 
             }
+            else
+            {
 
+         
+                    throw new Exception("No se ha encotnrado a la persona en la base de datos datos");
+                
+            }
 
+            throw new Exception("ERROR");
 
-            return false;
         }
 
       

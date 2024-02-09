@@ -22,6 +22,7 @@
                 <RowDefinition Height="50" />
                 <RowDefinition Height="10" />
                 <RowDefinition Height="*" />
+                <RowDefinition Height="50" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="10"/>
@@ -37,18 +38,20 @@
                         Grid.Column="1"
                         VerticalAlignment="Center" 
                         Orientation="Horizontal">
-                <TextBlock Text="Buscar por nombre: " FontSize="30"/>
-                <TextBox Name="txtNombre" 
-                         Width="200" 
+                <TextBlock Text="Buscar por nombre: " FontSize="25"/>
+                <TextBox Name="txtNombreBuscar" 
+                         Width="150" 
                          Background="Transparent" 
                          BorderBrush="Black" 
-                         BorderThickness="0,0,0,1"/>
+                         BorderThickness="0,0,0,1"
+                         VerticalAlignment="Center"/>
 
                 <Button x:Name="btnBuscarUsuario"
-                        Margin="50,0,0,0"
-                        Width="100"
+                        Margin="20,0,0,0"
+                        Width="80"
                         Content="Buscar"
-                        FontSize="25"
+                        FontSize="20"
+                        Click="btnBuscar_Usuario"
                         Style="{StaticResource ResourceKey=botonNormal}"/>
 
             </StackPanel>
@@ -101,6 +104,19 @@
 
 
             </DataGrid>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="50" Grid.Row="5" Grid.Column="1">
+
+                <Button x:Name="btnAgregarUsuario"
+                        Width="250"
+                        Height="40"
+                        Content="Eliminar Usuario"
+                        FontSize="25"
+                        Click="btnEliminar_Usuario"
+                        Style="{StaticResource ResourceKey=botonNormal}"/>
+
+
+            </StackPanel>
             
             
         </Grid>

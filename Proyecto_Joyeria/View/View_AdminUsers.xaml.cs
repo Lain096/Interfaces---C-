@@ -26,7 +26,7 @@ namespace Proyecto_Joyeria.View
 
             PersonaCollection pc = new PersonaCollection();
             ViewModelUsersAdminControl vm = new ViewModelUsersAdminControl();
-            DataTable dt = new DataTable();
+            //DataTable dt = new DataTable();
 
 
             //dt.Columns.Add("idPersonas");
@@ -59,6 +59,8 @@ namespace Proyecto_Joyeria.View
 
 
 
+
+
             //foreach (Model_Person p in pc)
             //{
 
@@ -82,9 +84,56 @@ namespace Proyecto_Joyeria.View
 
 
             //}
-            dataGridAdmin.ItemsSource =pc;
+            dataGridAdmin.ItemsSource = pc;
 
 
         }
+
+        private void btnBuscar_Usuario(object sender, RoutedEventArgs e)
+        {
+            string? dato = txtNombreBuscar.Text;
+
+            if (!String.IsNullOrEmpty(dato))
+            {
+
+                PersonaCollection pc = new PersonaCollection();
+                ViewModelUsersAdminControl vm = new ViewModelUsersAdminControl();
+                dataGridAdmin.ItemsSource = null;
+                dataGridAdmin.IsReadOnly = true;
+
+                try
+                {
+                    pc = vm.buscarUsuario(dato);
+
+                    dataGridAdmin.ItemsSource = pc;
+                }
+                catch (Exception)
+                {
+                    throw new Exception("No existe un usuario con esos datos");
+                }
+
+            }
+            else
+            {
+                cargarTablaUsuarios();
+            }
+
+
+        }
+
+        private void btnEliminar_Usuario(object sender, RoutedEventArgs e)
+        {
+
+            ViewModelUsersAdminControl vm = new ViewModelUsersAdminControl();
+            var mp = (Model_Person)dataGridAdmin.SelectedItem;
+
+            if (mp != null)
+            {
+
+                vm.eliminarPersona(mp.Name);
+            }
+        }
     }
-}
+    
+ }
+

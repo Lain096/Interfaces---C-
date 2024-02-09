@@ -107,7 +107,7 @@ namespace Proyecto_Joyeria.Model
                         }
 
                         using var command = new MySqlCommand(sql, connection);
-                        command.Parameters.AddWithValue("@dato", "%" + dato);
+                        command.Parameters.AddWithValue("@dato", "%" + dato + "%");
                         command.Prepare();
 
                         using var reader = command.ExecuteReader();
@@ -149,6 +149,7 @@ namespace Proyecto_Joyeria.Model
 
     public PersonaCollection comprobarLogIn(string user, string pass)
     {
+
         MySqlConnection connec = CreateConnection.obtenerConexionAbierta();
         PersonaCollection personaCollection = new PersonaCollection();
 
@@ -202,6 +203,7 @@ namespace Proyecto_Joyeria.Model
         return null;
     }
 
+    
 
 
     }

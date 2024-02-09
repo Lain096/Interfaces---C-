@@ -19,9 +19,10 @@ namespace Proyecto_Joyeria.View
     /// </summary>
     public partial class View_AdminPrincipal : Window
     {
-        public View_AdminPrincipal()
+        public View_AdminPrincipal(String user)
         {
             InitializeComponent();
+            userName.Text = user;
         }
 
         private void btnMostrarUsers(object sender, RoutedEventArgs e)

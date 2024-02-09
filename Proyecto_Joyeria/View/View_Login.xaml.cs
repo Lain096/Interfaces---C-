@@ -47,22 +47,45 @@ namespace Proyecto_Joyeria
 
         private void CLick_CheckUser(object sender, RoutedEventArgs e)
         {
-            string user = txtID.Text;
-            string pass = txtPass.ToString();
+            string? user = txtID.Text;
+            string? pass = txtPass.Password;
 
-           ViewModelLogIn vmlog = new ViewModelLogIn();
+            View_AdminPrincipal admin = new View_AdminPrincipal(user);
+            admin.Show();
+            //ViewModelLogIn vmlog = new ViewModelLogIn();
 
-            if (vmlog.isAdminOrUser(user, pass))
-            {
-             View_AdminPrincipal admin = new View_AdminPrincipal();   
-                        admin.Show();
-            }
-            else
-            {
-                View_UsuarioPrincipal windowUser = new View_UsuarioPrincipal();
-                windowUser.Show();
-            }
+            //if (String.IsNullOrEmpty(user) || String.IsNullOrEmpty(pass))
+            //{
+            //    MessageBox.Show("Por favor, rellene todos los campos");
 
+            //}
+            //else
+            //{
+            //    try
+            //    {
+            //        if (vmlog.isAdminOrUser(user, pass))
+            //        {
+            //            View_AdminPrincipal admin = new View_AdminPrincipal(user);
+            //            admin.Show();
+            //            txtID.Clear();
+            //            txtPass.Clear();
+            //        }
+            //        else
+            //        {
+            //            View_UsuarioPrincipal windowUser = new View_UsuarioPrincipal();
+            //            windowUser.Show();
+                        
+            //            txtID.Clear();
+            //            txtPass.Clear();
+            //        }
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        MessageBox.Show(ex.Message);
+            //        txtID.Clear();
+            //        txtPass.Clear();
+            //    }
+            //}
           
 
         }

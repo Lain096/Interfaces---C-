@@ -8,5 +8,7 @@ namespace Proyecto_Joyeria.ViewModel
 {
     internal class ViewModelUserControl
     {
+
+
     }
 }
