@@ -14,9 +14,9 @@ namespace Proyecto_Joyeria.Core
         private static MySqlConnection conn = null;
         private static String SERVIDOR = "localhost";
         private static uint PUERTO = 3306;
-        private static String BD = "mydb";
+        private static String BD = "joyeria";
         private static String USUARIO = "root";
-        private static String PASSWORD = "bollicao";
+        private static String PASSWORD = "admin";
 
         private CreateConnection()
         {
@@ -67,11 +67,12 @@ namespace Proyecto_Joyeria.Core
             {
                 try
                 {
-                    conn.Close();
+                    //conn.Close();
                     conn.Open();
                 }
-                catch
+                catch (Exception e)
                 {
+                 
                     return null;
                 }
             }

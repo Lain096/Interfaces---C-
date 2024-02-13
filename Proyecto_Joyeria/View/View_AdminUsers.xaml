@@ -113,7 +113,7 @@
                         Content="Eliminar Usuario"
                         FontSize="25"
                         Click="btnEliminar_Usuario"
-                        Style="{StaticResource ResourceKey=botonNormal}"/>
+                        Style="{StaticResource botonNormal}"/>
 
 
             </StackPanel>

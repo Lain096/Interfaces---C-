@@ -1,0 +1,168 @@
+﻿<Page x:Class="Proyecto_Joyeria.View.View_FrameReparaciones"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Proyecto_Joyeria.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="View_FrameReparaciones"
+      Background="Transparent">
+
+    <Border CornerRadius="5">
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                <GradientStop Color="AliceBlue" Offset="1"/>
+                <GradientStop Color="#FFF7CAD1" Offset="0"/>
+            </LinearGradientBrush>
+        </Border.Background>
+
+        <Grid x:Name="gridProductosUsuarios">
+           <!--#region GRID DEFINITION-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition Width="20"/>
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition Height="20"/>                
+            </Grid.RowDefinitions>
+            <!--#endregion-->
+            
+            <!--#region GRID TITULO-->
+            <TextBlock Grid.Row="0" Grid.ColumnSpan="6"
+                       Text="TUS COSAS"
+                       Foreground="Black"
+                       HorizontalAlignment="Right"
+                       FontSize="30"
+                       VerticalAlignment="Center"/>
+            <!--#endregion-->
+            
+            <!--#region BUSCADOR-->
+
+            <TextBlock Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" 
+                       Grid.ColumnSpan="2"
+                     Text="Buscar Producto:"
+                     FontSize="23"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Left"
+                            
+                    />
+
+            <TextBox Grid.Row="2" Grid.Column="1" 
+                     TextAlignment="Center"
+                     Name="txtBuscarProducto"
+                     FontSize="20"
+                     Background="Transparent"
+                     VerticalAlignment="Center"
+                     BorderBrush="HotPink"       
+                    />
+
+            <Button x:Name="btnBuscarProductoUsuario"
+                    Grid.Row="2" Grid.Column="2"
+                    FontSize="20"
+                    Width="100"
+                    Click="buscarProducto"
+                    Style="{StaticResource botonNormal}"
+                    HorizontalAlignment="Left"
+                    Margin="10,0,0,0"
+                    >
+                <TextBlock Text="Buscar" Foreground="White" FontSize="20"/>
+
+            </Button>
+            <!--#endregion -->
+
+            <!--#region AÑADIR COSAS-->
+            <Button x:Name="btnAgregarProductoUsuario"
+                    Grid.Row="2" Grid.Column="3"
+                    FontSize="20"
+                    HorizontalAlignment="Right"
+                    Grid.ColumnSpan="2"
+                    Content="Añadir Producto"
+                    Foreground="White"
+                    Cursor="Hand"
+                    Click="btnAñadirProducto"
+                    Style="{StaticResource botonNormal}" 
+                   />
+<!--#endregion-->
+            
+            <!--#region DATAGRID-->
+
+            <DataGrid   Grid.Row="4"
+                      Grid.Column="1"
+                      Grid.RowSpan="3"
+                      Grid.ColumnSpan="4"
+                      Name="dataGridMostrarProductosUsuarios"
+                      AutoGenerateColumns="False"
+                      Background="white"
+                      Foreground="black"
+                      CanUserAddRows="False"
+                      CanUserResizeColumns="True"
+                      CanUserResizeRows="False"
+                      CanUserSortColumns="False"
+                      RowBackground="Transparent"
+                      HeadersVisibility="Column"
+                      GridLinesVisibility="Horizontal"
+                      HorizontalGridLinesBrush="Pink">
+               
+                <DataGrid.Resources>
+                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                        <Setter Property="Background" Value="LightPink"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="FontSize" Value="18"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    </Style>
+                    <Style TargetType="DataGridRow">
+                        <EventSetter Event="MouseDoubleClick" Handler="clickFila"/>
+                    </Style>
+
+                    <Style TargetType="{x:Type DataGridCell}">
+                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                    </Style>
+                </DataGrid.Resources>
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Id" Width="50" Binding="{Binding IdProducto}"/>
+                    <DataGridTextColumn Header="Producto" Width="*" Binding="{Binding Nombre}"/>
+                    <DataGridTextColumn Header="Fecha Depósito" Width="*" Binding="{Binding FechaDeposito}"/>
+                    <DataGridTextColumn Header="Estado" Width="*" Binding="{Binding Terminado}"/>
+                </DataGrid.Columns>
+                
+                
+                
+            </DataGrid>
+            
+
+            <!--#endregion-->
+
+
+            <Frame Name="introducirProducto"
+                   Grid.Column="0"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="5"
+                   Grid.RowSpan="8"
+                   NavigationUIVisibility="Hidden" />
+
+
+        </Grid>
+
+        
+
+
+       
+
+    </Border>
+</Page>

@@ -12,13 +12,7 @@
         AllowsTransparency="True"
         ResizeMode="NoResize"
         Background="Transparent">
-
-    <Window.DataContext>
-
-        <vm:ViewModelChanges/>
-    </Window.DataContext>
-
-
+  
 
     <Border Background="Transparent">
 
@@ -59,27 +53,44 @@
                         <StackPanel Orientation="Vertical" Height="65" Width="100" HorizontalAlignment="Left" Margin="20,25,0,0">
                             <Image Source="../Assets/logo.png" Height="50" Width="50" Stretch="Uniform" HorizontalAlignment="Left"/>
                             <!-- Meter Binding en el Text para el nombre del usuario-->
-                            <TextBlock Text="USUARIO" FontWeight="Medium" HorizontalAlignment="Left"/>
+                         
 
                         </StackPanel>
 
                         
                         <!-- Botones de Menu-->
-                        <RadioButton Style="{StaticResource navegacion}"
-                                     Tag="AliceBlue" Command="{Binding UserControlCommand}" 
+                        <RadioButton Style="{StaticResource navegacionUser}"
+                                     Tag="AliceBlue"
                                      Click="btnMostrarCuenta">
+      
                             <StackPanel Orientation="Horizontal">
                                 <fa:IconImage Icon="User" Style="{StaticResource menuButtonIcon}" />
                                 <TextBlock Text="Mi Cuenta" Style="{StaticResource menuButtonText}" />
                             </StackPanel>
+
+                           
                             
                         </RadioButton>
                         <RadioButton Style="{StaticResource navegacion}"
-                                 Tag="AliceBlue" Command="{Binding UserReparationCommand}">
+                                     Tag="AliceBlue"
+                                     Click="btnMostrarReparaciones">
                             <StackPanel Orientation="Horizontal">
                                 <fa:IconImage Icon="Toolbox" Style="{StaticResource menuButtonIcon}" />
                                 <TextBlock Text="Mis reparaciones" Style="{StaticResource menuButtonText}" TextWrapping="Wrap"/>
                             </StackPanel>
+
+                        </RadioButton>
+
+                        <RadioButton Style="{StaticResource navegacionUser}"
+                                     Tag="AliceBlue"
+                                     Click="btnLogOut">
+
+                            <StackPanel Orientation="Horizontal">
+                                <fa:IconImage Icon="LockOpen" Style="{StaticResource menuButtonIcon}" />
+                                <TextBlock Text="Log Out" Style="{StaticResource menuButtonText}" />
+                            </StackPanel>
+
+
 
                         </RadioButton>
 
@@ -155,13 +166,28 @@
                          </Grid>
                         
                         -->
-                       
+                         
+                        <!--<ContentControl Content="{Binding CurrentView}" Grid.Row="2" Margin="25">
 
-                        <ContentControl Content="{Binding CurrentView}" Grid.Row="2" Margin="25">
+
+
+
+                        </ContentControl>-->
+
+                        <TextBlock Text="Bienvenido" 
+                                   FontSize="80" 
+                                   FontWeight="Bold" 
+                                   Foreground="AliceBlue" 
+                                   Margin="25,0,0,0"
+                                   Grid.Row="2"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Grid.RowSpan="3">
+                        </TextBlock>
+                        <Frame Name="frameUserPrincipal" Grid.Row="2" Margin="25" NavigationUIVisibility="Hidden">
                             
-                            
-                            
-                        </ContentControl>
+                        </Frame>
+
                     </Grid>
 
                 </Border>

@@ -81,6 +81,19 @@
 
                         </RadioButton>
 
+                        <RadioButton Style="{StaticResource navegacionUser}"
+                             Tag="AliceBlue"
+                             Click="btnLogOut">
+
+                            <StackPanel Orientation="Horizontal">
+                                <fa:IconImage Icon="LockOpen" Style="{StaticResource menuButtonIcon}" />
+                                <TextBlock Text="Log Out" Style="{StaticResource menuButtonText}" />
+                            </StackPanel>
+
+
+
+                        </RadioButton>
+
                     </StackPanel>
 
                 </Border>

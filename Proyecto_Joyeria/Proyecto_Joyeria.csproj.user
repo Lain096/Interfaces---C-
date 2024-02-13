@@ -13,10 +13,28 @@
     <Compile Update="View\View_AdminUsers.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\View_ReparationControl.xaml.cs">
+    <Compile Update="View\View_AñadirProductoUser.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\View_UserControl.xaml.cs">
+    <Compile Update="View\View_CrearCuenta.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\View_FrameReparaciones.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\View_FrameUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\View_ModificarUsuario.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\View_MostrarProductoAdmin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\View_MostrarProductoUsuario.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\View_ReparationsAdminControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\View_UsuarioPrincipal.xaml.cs">
@@ -33,13 +51,31 @@
     <Page Update="View\View_AdminUsers.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\View_AñadirProductoUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\View_CrearCuenta.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\View_FrameReparaciones.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\View_FrameUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\View_Login.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="View\View_ReparationControl.xaml">
+    <Page Update="View\View_ModificarUsuario.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="View\View_UserControl.xaml">
+    <Page Update="View\View_MostrarProductoAdmin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\View_MostrarProductoUsuario.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\View_ReparationsAdminControl.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\View_UsuarioPrincipal.xaml">

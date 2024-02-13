@@ -1,0 +1,90 @@
+﻿<Window x:Class="Proyecto_Joyeria.View.View_MostrarProductoUsuario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto_Joyeria.View"
+        mc:Ignorable="d"
+        Title="View_MostrarProductoUsuario" Height="450" Width="800"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent">
+    <Border Background="#ffeeff"
+            CornerRadius="10">
+        <Grid>
+        <!--#region DATAGRID DEFINITION-->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+              <!--#endregion-->
+        <!--#region  TITULO-->
+                <TextBlock Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="3"
+                           Text="INFORMACIÓN" HorizontalAlignment="Center" VerticalAlignment="Center"
+                           FontSize="40"/>
+    <!-- #endregion-->
+          
+        <!--#region REGRESO-->
+            <Button Grid.Row="1" 
+                    Grid.Column="1" 
+                    Content="REGRESAR" 
+                    FontSize="20"
+                    Click="btnInformacionRegresar"
+                    Foreground="White"
+                    FontWeight="SemiBold"
+                    Style="{StaticResource botonNormal}"/>
+<!--#endregion-->
+         <!--#region DATOS-->
+            <TextBlock Text="Nombre: " Grid.Row="3" HorizontalAlignment="Center" Grid.Column="1" VerticalAlignment="Center" FontSize="20" FontWeight="SemiBold"/>
+            <TextBlock x:Name="informacionNombre" Grid.Row="3"
+                        Grid.Column="2"  Grid.ColumnSpan="2"
+                       HorizontalAlignment="Left"
+                        VerticalAlignment="Center" FontSize="18"/>
+
+            <TextBlock Text="Información: " Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" FontSize="20" HorizontalAlignment="Center" FontWeight="SemiBold"/>
+            <TextBlock x:Name="informacionInformacion" Grid.Row="6" 
+                       Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="3" TextWrapping="Wrap"
+                       VerticalAlignment="Top" Margin="10,5,0,0" FontSize="18"/>
+
+
+
+            <TextBlock Text="Modificación: " HorizontalAlignment="Center" Grid.Row="8" Grid.Column="1" VerticalAlignment="Center" FontSize="20" FontWeight="SemiBold"/>
+            <TextBlock x:Name="informacionModificacion" Grid.Row="9" 
+                       Grid.Column="1" Grid.RowSpan="2" 
+                       Grid.ColumnSpan="3" TextWrapping="Wrap"
+                       VerticalAlignment="Top" Margin="10,5,0,0" FontSize="18"/>
+            
+            <Image Grid.Row="3" 
+                   x:Name="informacionImagen"
+                   Grid.Column="4" 
+                   Grid.ColumnSpan="2" 
+                   Grid.RowSpan="4" />
+
+            <TextBlock Text="Fecha de Depósito" Grid.Row="8"  Grid.Column="4" VerticalAlignment="Center" 
+                       FontSize="18" FontStyle="Italic"/>
+            <TextBlock x:Name="informacionFechaDeposito" VerticalAlignment="Top" Grid.Column="5" Grid.Row="8" Margin=" 0,10,0,0"
+                       FontSize="18" FontStyle="Italic" Grid.RowSpan="2" TextWrapping="Wrap"/>
+            <!--#endregion-->   
+        </Grid>
+
+    </Border>
+</Window>

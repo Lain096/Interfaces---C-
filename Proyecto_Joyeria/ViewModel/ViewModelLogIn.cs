@@ -46,7 +46,7 @@ namespace Proyecto_Joyeria.ViewModel
             {
 
          
-                    throw new Exception("No se ha encotnrado a la persona en la base de datos datos");
+                    throw new Exception("No se ha encontrado a la persona en la base de datos datos");
                 
             }
 
@@ -54,6 +54,22 @@ namespace Proyecto_Joyeria.ViewModel
 
         }
 
-      
+        public Model_Person devolverPersona(string name)
+        {
+            Model_Person p = new Model_Person();
+            try
+            {
+                p = p.buscarPersona(name);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al cargar usuario: " + ex.Message);
+
+            }
+
+            return p;
+        }
+
+
     }
 }

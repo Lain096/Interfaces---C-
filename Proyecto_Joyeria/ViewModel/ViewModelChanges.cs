@@ -1,4 +1,5 @@
 ﻿using Proyecto_Joyeria.Core;
+using Proyecto_Joyeria.Model;
 using System;
 using System.Collections.Generic;
 using System.DirectoryServices;
@@ -15,12 +16,13 @@ namespace Proyecto_Joyeria.ViewModel
         public RelayCommand AdminUsersControlCommand { get; set; }
         public RelayCommand AdminReparationsControlCommand { get; }
 
+
         public ViewModelUsersAdminControl VMUsersAdminControl { get; set; }
         public ViewModelReparationAdminControl VMReparationsAdminControl { get; set; }
+		private Model_Person personaSeleccionada;
 
 
-        public ViewModelUserControl VMControl { get; set; }
-		public ViewModelReparationControl VMReparationControl { get; set; }
+      
 
 		private object _currentView;
 
@@ -34,23 +36,24 @@ namespace Proyecto_Joyeria.ViewModel
 			}
 		}
 
+		public Model_Person PersonaSeleccionada
+		{
+            get { return personaSeleccionada; }
+            set
+			{
+                personaSeleccionada = value;
+                OnPropertyChanged(nameof(personaSeleccionada));
+            }
+        }
+
 		public ViewModelChanges()
 		{
-			VMControl = new ViewModelUserControl();
-			VMReparationControl = new ViewModelReparationControl();
+			
             VMUsersAdminControl = new ViewModelUsersAdminControl();
             VMReparationsAdminControl = new ViewModelReparationAdminControl();
             //CurrentView = VMControl;
 
-			UserControlCommand = new RelayCommand(o =>
-			{
-				CurrentView = VMControl;
-			} );
-
-			UserReparationCommand = new RelayCommand(o =>
-			{
-				CurrentView = VMReparationControl;
-			});
+		
             AdminUsersControlCommand = new RelayCommand(o => {
                 CurrentView = VMUsersAdminControl;
 

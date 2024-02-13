@@ -73,7 +73,7 @@ namespace Proyecto_Joyeria.Model
             }
             finally
             {
-                connection.Close();
+                CreateConnection.cerrarConexion();
            }
      }
 
@@ -147,7 +147,7 @@ namespace Proyecto_Joyeria.Model
         }
    
 
-    public PersonaCollection comprobarLogIn(string user, string pass)
+        public PersonaCollection comprobarLogIn(string user, string pass)
     {
 
         MySqlConnection connec = CreateConnection.obtenerConexionAbierta();
@@ -198,14 +198,16 @@ namespace Proyecto_Joyeria.Model
         }
         catch (MySqlException e)
         {
-            throw new Exception("ERROR FATAL");
-        }
+            throw new Exception("ERROR al leer usuarios");
+            }
+            finally
+            {
+                CreateConnection.cerrarConexion();
+            }
         return null;
     }
 
-    
-
-
+   
     }
 
     public class Model_Person
@@ -291,30 +293,109 @@ namespace Proyecto_Joyeria.Model
             return null;
         } 
 
+
+        public bool personaExiste(string name)
+        {
+            try
+            {
+                MySqlConnection connection = CreateConnection.obtenerConexionAbierta();
+
+
+                if (connection == null)
+                {
+                    throw new Exception("Error en la conexion");
+                }
+                else
+                {
+                    try
+                    {
+                        string sql = "SELECT * FROM PERSONAS WHERE user = @user";
+
+                        using var command = new MySqlCommand(sql, connection);
+                        command.Parameters.AddWithValue("@user", name);
+                        command.Prepare();
+
+                        using var reader = command.ExecuteReader();
+
+                        if (reader.HasRows)
+                        {                          
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+
+                    }
+                    catch (MySqlException e)
+                    {
+                        throw new Exception("Error en la conexion");
+                    }
+                }
+
+            }catch (Exception e)
+            {
+                throw new Exception("Error en la conexion");
+            }
+            finally
+            {
+                CreateConnection.cerrarConexion();
+            }   
+
+            return false;
+        }
+
         public bool insertPersona(Model_Person person)
         {
 
-            bool insertada = false;
+            MySqlConnection connection = null;
+            MySqlTransaction transaction = null;
 
             try
             {
-
-              //  if (person.Id !=)
-               // {
-
-               // }
-
-                // CAmpso de las personas
                 
+                int? id = ultimoId();
+                connection = CreateConnection.obtenerConexionAbierta();
+               
+                if (connection == null)
+                {
+                    throw new Exception("No se ha podido establecer conexion");
+                }
+                else
+                {
 
+                    transaction = connection.BeginTransaction();
 
+                    string sql1 = "INSERT INTO PERSONAS (idPersonas, user, pass, email) VALUES (@id, @user, @pass, @email)";
+                    MySqlCommand comman1 = new MySqlCommand(sql1, connection, transaction);
+                    comman1.Parameters.AddWithValue("@id", id);
+                    comman1.Parameters.AddWithValue("@user", person.Name);
+                    comman1.Parameters.AddWithValue("@pass", person.Pass);
+                    comman1.Parameters.AddWithValue("@email", person.Email);
+                    comman1.ExecuteNonQuery();
 
+                    string sql2 = "INSERT INTO PERFIL (idPersonas, isAdmin) VALUES (@id, @isAdmin)";
+                    MySqlCommand comman2 = new MySqlCommand(sql2, connection, transaction);
+                    comman2.Parameters.AddWithValue("@id", id);
+                    comman2.Parameters.AddWithValue("@isAdmin", 0);
+                    comman2.ExecuteNonQuery();
 
+                    transaction.Commit();
 
+                    return true;
+                }
 
             }catch(Exception e)
             {
-                throw new Exception("error en la base de datos");
+                if (transaction == null)
+                {
+                    transaction.Rollback();
+                }
+                throw new Exception("No se ha podido crear el usuario", e);
+            }
+            finally
+            {
+                CreateConnection.cerrarConexion();
             }
 
 
@@ -324,11 +405,12 @@ namespace Proyecto_Joyeria.Model
 
         public bool eliminarPersona(Model_Person person)
         {
-            bool encontrado = false;
+
             try
             {
 
                 MySqlConnection connect = CreateConnection.obtenerConexionAbierta();
+                MySqlTransaction transaction = null;
 
                 if (connect == null)
                 {
@@ -339,35 +421,43 @@ namespace Proyecto_Joyeria.Model
 
                     try
                     {
-                        string sql = " DELETE FROM PERSONA WHERE IdPersona = @id";
 
-                        using var command = new MySqlCommand(sql, connect);
+                        transaction = connect.BeginTransaction();
+
+                        string sql2 = "DELETE FROM PERFIL WHERE idPersonas = @id";
+                        using var command2 = new MySqlCommand(sql2, connect, transaction);
+                        command2.Parameters.AddWithValue("@id", person.Id);
+                        command2.ExecuteNonQuery();
+
+
+
+                        string sql = "DELETE FROM PERSONAS WHERE idPersonas = @id";
+
+                        using var command = new MySqlCommand(sql, connect ,transaction);
 
                         command.Parameters.AddWithValue("@id", person.Id);   
-                        command.Prepare();
-
-
+                  //      command.Prepare();
                         command.ExecuteNonQuery();
 
-                        encontrado = true;
-                        return encontrado;
+
+                        transaction.Commit();
+                        
+
+                        return true;
                                            
                     }
                     catch (MySqlException e)
                     {
-                        throw new Exception("No se ha podido eliminar a la persona");
+                      
+                        throw new Exception("No se ha podido eliminar a la persona ya que tiene productos a su cargo");
                     }
-                    
-
-
+                   
                 }
-
-
 
             }
             catch (Exception e)
             {
-                throw new Exception("ERROR");
+                throw new Exception(e.Message);
             }
             finally
             {
@@ -375,15 +465,14 @@ namespace Proyecto_Joyeria.Model
             }
 
 
-            return false;
+           
         }
+
+        
 
         #region buscarId
         public int? ultimoId()
-        {
-
-           
-            
+        {                
             try
             {
                 MySqlConnection connection = CreateConnection.obtenerConexionAbierta();
@@ -394,25 +483,25 @@ namespace Proyecto_Joyeria.Model
                 }
                 else
                 {
-                    String sql = "SELECT * FROM PERSONAS ORDER BY IdPersonas DESC LIMIT 1";
+                    String sql = "SELECT * FROM PERSONAS ORDER BY idPersonas DESC LIMIT 1";
 
                     using var command = new MySqlCommand(sql, connection);  
                     command.ExecuteNonQuery();
-
+                    
                     using var reader = command.ExecuteReader();
 
                     if (reader.HasRows)
                     {
                         while (reader.Read())
                         {
-                        return reader.GetInt32(0); 
+                        return reader.GetInt32(0) +1; 
 
                         }
 
                     }
                     else
                     {
-                        throw new Exception("No se encontraro Id's");
+                        throw new Exception("No se encontraron Ids");
                     }
                     
 
@@ -434,6 +523,80 @@ namespace Proyecto_Joyeria.Model
 
         #endregion buscarId
 
+
+        public int buscarId(string name, MySqlConnection connect)
+        {
+
+            string sql = "SELECT idPersonas FROM PERSONAS WHERE user = @user";
+
+            MySqlCommand command = new MySqlCommand(sql, connect);
+            command.Parameters.AddWithValue("@user", name);
+            command.Prepare();
+
+
+            using var reader = command.ExecuteReader();
+            try
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        return reader.GetInt32(0);
+                    }
+                }
+            }
+            catch (InvalidOperationException e)
+            {
+                throw new Exception("Error al buscar el id");
+            }
+
+            return -1;
+        }
+        
+
+        public bool modificarUsuario(Model_Person p)
+        {
+            try
+            {
+                MySqlConnection connection = CreateConnection.obtenerConexionAbierta();
+
+                if (connection == null)
+                {
+                    throw new Exception("Error en la conexion");
+                }
+                else
+                {
+                    try
+                    {
+                        string sql = "UPDATE PERSONAS SET user = @user, email = @email, pass = @pass WHERE idPersonas = @id";
+                        MySqlCommand command = new MySqlCommand(sql, connection);
+                        command.Parameters.AddWithValue("@user", p.Name);
+                        command.Parameters.AddWithValue("@email", p.Email);
+                        command.Parameters.AddWithValue("@pass", p.Pass);
+                        command.Parameters.AddWithValue("@id", p.Id);
+                        command.ExecuteNonQuery();
+
+                        return true;
+                    }
+                    catch (MySqlException e)
+                    {
+                        throw new Exception("Error al modificar usuario");
+                    }
+
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception("ERROR FATAL");
+            }
+            finally
+            {
+                CreateConnection.cerrarConexion();
+            }
+
+            return false;
+        }
+    
     }
 }
 

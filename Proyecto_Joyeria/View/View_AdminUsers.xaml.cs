@@ -130,7 +130,8 @@ namespace Proyecto_Joyeria.View
             if (mp != null)
             {
 
-                vm.eliminarPersona(mp.Name);
+                vm.eliminarPersona(mp);
+                cargarTablaUsuarios();
             }
         }
     }

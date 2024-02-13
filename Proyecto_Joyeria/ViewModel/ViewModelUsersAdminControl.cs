@@ -79,21 +79,29 @@ namespace Proyecto_Joyeria.ViewModel
             }
         }
 
-        public void eliminarPersona(string name)
+        public void eliminarPersona(Model_Person mp)
         {
-            Model_Person mp = new Model_Person();
+            //Model_Person mp = new Model_Person();
            
-            mp = mp.buscarPersona(name);
+           // mp = mp.buscarPersona(name);
 
             if (!mp.IsAdmin)
             {
-                if (mp.eliminarPersona(mp))
+                try
                 {
-                    MessageBox.Show("Se ha eliminado correctamente", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
+                    if (mp.eliminarPersona(mp))
+                    {
+                        MessageBox.Show("Se ha eliminado correctamente", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se ha podido eliminar al usuario " + mp.Name, "Información", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
                 }
-                else
+                catch (Exception e)
                 {
-                    MessageBox.Show("No se ha podido eliminar al usuario " + mp.Name, "Información", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show(e.Message);
                 }
             }
             else

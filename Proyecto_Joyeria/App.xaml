@@ -11,15 +11,13 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary  Source="/Styles/ButtonStyles.xaml" />
             </ResourceDictionary.MergedDictionaries>
-            <DataTemplate DataType="{x:Type vm:ViewModelUserControl}">
-                <v:View_UserControl/>
-            </DataTemplate>
-            <DataTemplate DataType="{x:Type vm:ViewModelReparationControl}">
-                <v:View_ReparationControl/>
-            </DataTemplate>
+            
             <DataTemplate DataType="{x:Type vm:ViewModelUsersAdminControl}">
                 <v:View_AdminUsers/>
-            </DataTemplate>               
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:ViewModelReparationAdminControl}">
+                <v:View_ReparationsAdminControl/>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

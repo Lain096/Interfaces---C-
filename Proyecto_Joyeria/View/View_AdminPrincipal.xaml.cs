@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_Joyeria.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,10 +20,10 @@ namespace Proyecto_Joyeria.View
     /// </summary>
     public partial class View_AdminPrincipal : Window
     {
-        public View_AdminPrincipal(String user)
+        public View_AdminPrincipal(Model_Person p)
         {
             InitializeComponent();
-            userName.Text = user;
+            userName.Text = p.Name;
         }
 
         private void btnMostrarUsers(object sender, RoutedEventArgs e)
@@ -48,6 +49,13 @@ namespace Proyecto_Joyeria.View
         private void crlPanel_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
+        }
+
+        private void btnLogOut(object sender, RoutedEventArgs e)
+        {
+            MainWindow mw = new MainWindow();
+            mw.Show();
+            this.Close();
         }
     }
 }
