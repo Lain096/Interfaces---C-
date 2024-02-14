@@ -156,6 +156,7 @@
                        Grid.Column="2" 
                        Grid.RowSpan="2" 
                        Width="100"
+                     Loaded="infoPrecio"
                        Text="{Binding Precio, StringFormat=N2, ConverterCulture='es-ES', Mode=OneTime}"
                        VerticalAlignment="Center" 
                        HorizontalAlignment="Left"

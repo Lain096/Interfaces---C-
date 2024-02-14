@@ -28,6 +28,9 @@ namespace Proyecto_Joyeria.View
         {
             InitializeComponent();
             this.mp = p;
+
+            
+
             if (p.Estado)
             {
                 txtReparado.Foreground = new SolidColorBrush(Colors.Green);
@@ -66,6 +69,15 @@ namespace Proyecto_Joyeria.View
             else
             {
                 MessageBox.Show("El producto ya ha sido reparado");
+            }
+        }
+
+        private void infoPrecio(object sender, RoutedEventArgs e)
+        {
+            if (!String.IsNullOrEmpty(informacionPrecio.ToString()))
+            {
+                informacionPrecio.IsReadOnly = true;
+                informacionPrecio.Text = mp.Precio.ToString();
             }
         }
     }
