@@ -468,6 +468,64 @@ namespace Proyecto_Joyeria.Model
            
         }
 
+        public Model_Person buscarPersona(int id)
+        {
+            Model_Person p = new Model_Person();
+
+            try
+            {
+                MySqlConnection connection = CreateConnection.obtenerConexionAbierta();
+
+                if (connection == null)
+                {
+                    throw new Exception("Error en la conexion");
+                }
+                else
+                {
+                    try
+                    {
+                        string sql = "SELECT * FROM PERSONAS WHERE idPersonas = @id";
+
+                        using var command = new MySqlCommand(sql, connection);
+                        command.Parameters.AddWithValue("@id", id);
+                        command.Prepare();
+
+                        using var reader = command.ExecuteReader();
+
+                        if (reader.HasRows)
+                        {
+                            while (reader.Read())
+                            {
+                                p.Id = reader.GetInt32(0);
+                                p.Name = reader.GetString(1);
+                                p.Pass = reader.GetString(2);
+                                p.Email = reader.GetString(3);
+                            }
+                        }
+                        else
+                        {
+                            throw new Exception("No se ha encontrado el usuario");
+                        }
+
+                    }
+                    catch (MySqlException e)
+                    {
+                        throw new Exception("Error al buscar el usuario");
+                    }
+                }
+
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Error en la conexion");
+            }
+            finally
+            {
+                CreateConnection.cerrarConexion();
+            }
+
+            return p;
+        }
         
 
         #region buscarId

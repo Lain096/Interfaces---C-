@@ -21,7 +21,7 @@ namespace Proyecto_Joyeria.Core
     internal class GeneratePDF
     {
 
-        public void crearPDF(Model_Producto p)
+        public void crearPDF(Model_Producto p, Model_Person mp)
         {
             //string rutaAplicacion = Directory.GetCurrentDirectory();
            // string rutaAplicacion = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Descargas");
@@ -42,8 +42,9 @@ namespace Proyecto_Joyeria.Core
             PdfFont fontColumnas = PdfFontFactory.CreateFont(StandardFonts.HELVETICA_BOLD);
             PdfFont fontContenido = PdfFontFactory.CreateFont(StandardFonts.HELVETICA);
 
-            string[] columnas = { "ID","Categoria", "Dueño", "Producto", "Descripción", "Modificacion", "Precio" };
-            float[] tamanios = { 2, 4, 4, 6, 10, 10, 2 };
+            //string[] columnas = { "ID","Categoria", "Dueño", "Producto", "Descripción", "Modificacion", "Precio" };
+            string[] columnasProducto = { "ID", "Categoria", "Producto", "Descripción", "Modificacion", "Precio" };
+            float[] tamaniosProductos = { 2, 6, 6, 10, 10, 2 };
 
             var encabezado = new Paragraph("Factura").SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER).SetBold().SetFontSize(28).SetFontColor(new DeviceRgb(255, 0, 0));
             var subtitulo = new Paragraph("Detalles del Producto").SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER).SetFontSize(16);
@@ -51,17 +52,17 @@ namespace Proyecto_Joyeria.Core
             documento.Add(encabezado);
             documento.Add(subtitulo);
 
-            Table tabla = new Table(UnitValue.CreatePercentArray(tamanios));
+            Table tabla = new Table(UnitValue.CreatePercentArray(tamaniosProductos));
             tabla.SetWidth(UnitValue.CreatePercentValue(100));
 
-            foreach (string columna in columnas)
+            foreach (string columna in columnasProducto)
             {
                 tabla.AddHeaderCell(new Cell().Add(new Paragraph(columna).SetFont(fontColumnas)));
             }
 
             tabla.AddCell(new Cell().Add(new Paragraph(p.IdProducto.ToString()).SetFont(fontContenido)));
             tabla.AddCell(new Cell().Add(new Paragraph(p.NombreCategoria).SetFont(fontContenido)));
-            tabla.AddCell(new Cell().Add(new Paragraph(p.NombrePersona).SetFont(fontContenido)));
+            // tabla.AddCell(new Cell().Add(new Paragraph(p.NombrePersona).SetFont(fontContenido)));
             tabla.AddCell(new Cell().Add(new Paragraph(p.Nombre).SetFont(fontContenido)));
             tabla.AddCell(new Cell().Add(new Paragraph(p.Informacion).SetFont(fontContenido)));
             tabla.AddCell(new Cell().Add(new Paragraph(p.Modificacion).SetFont(fontContenido)));
@@ -70,6 +71,23 @@ namespace Proyecto_Joyeria.Core
 
 
             documento.Add(tabla);
+
+            string[] columnasPersona = { "ID", "Nombre", "Email"};
+            float[] tamaniosPersona = { 2, 6, 15};
+
+            Table tablaP = new Table(UnitValue.CreatePercentArray(tamaniosPersona));
+            tablaP.SetWidth(UnitValue.CreatePercentValue(100));
+
+            foreach (string columna in columnasPersona)
+            {
+                tabla.AddHeaderCell(new Cell().Add(new Paragraph(columna).SetFont(fontColumnas)));
+            }
+
+            tablaP.AddCell(new Cell().Add(new Paragraph(mp.Id.ToString()).SetFont(fontContenido)));
+            tablaP.AddCell(new Cell().Add(new Paragraph(mp.Name).SetFont(fontContenido)));
+            tablaP.AddCell(new Cell().Add(new Paragraph(mp.Email).SetFont(fontContenido)));
+
+            documento.Add(tablaP);
 
             var firma= new Paragraph("Firma: ___________________________").SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER).SetFontSize(12).SetMarginTop(100);
 

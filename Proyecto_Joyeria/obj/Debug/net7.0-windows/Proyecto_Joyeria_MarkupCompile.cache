@@ -1,5 +1,5 @@
 ﻿Proyecto_Joyeria
-1.0.0.0
+
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 D:\Git\Interfaces\Proyecto_Joyeria\App.xaml
 131952233295
 3157946334
-37903042420
+35773045658
 235-1121841680
 Styles\ButtonStyles.xaml;View\View_AdminPrincipal.xaml;View\View_AdminUsers.xaml;View\View_AñadirProductoUser.xaml;View\View_CrearCuenta.xaml;View\View_FrameReparaciones.xaml;View\View_FrameUserControl.xaml;View\View_Login.xaml;View\View_ModificarUsuario.xaml;View\View_MostrarProductoAdmin.xaml;View\View_MostrarProductoUsuario.xaml;View\View_ReparationsAdminControl.xaml;View\View_UsuarioPrincipal.xaml;
 
-True
+False
 

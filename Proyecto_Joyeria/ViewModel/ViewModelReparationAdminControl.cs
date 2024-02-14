@@ -121,5 +121,19 @@ namespace Proyecto_Joyeria.ViewModel
             
         }
 
+        public int buscarIdDueño(int idProducto)
+        {
+            Model_Producto p = new Model_Producto();
+
+            return p.buscarIdDueño(idProducto);
+        }
+
+        public Model_Person buscarPersona(int id)
+        {
+            Model_Person p = new Model_Person();
+
+            return p.buscarPersona(id);
+        }
+
     }
 }

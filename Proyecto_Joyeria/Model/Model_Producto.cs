@@ -170,6 +170,53 @@ namespace Proyecto_Joyeria.Model
 
         }
 
+        public int buscarIdDueño(int idProducto)
+        {
+            try
+            {
+                MySqlConnection conn = CreateConnection.obtenerConexionAbierta();
+
+                if (conn == null)
+                {
+                    throw new Exception("No se ha podido establecer conexion con la base de datos");
+                }
+                else
+                {
+                    string sql = "SELECT idPersonas FROM producto WHERE idProducto = @idProducto";
+                    MySqlCommand command = new MySqlCommand(sql, conn);
+
+                    command.Parameters.AddWithValue("@idProducto", idProducto);
+                    try
+                    {
+                        using var reader = command.ExecuteReader();
+
+                        if (reader.HasRows)
+                        {
+                            while (reader.Read())
+                            {
+                                return reader.GetInt32(0);
+                            }
+                        }
+                        else
+                        {
+                            throw new Exception("No se ha encontrado el producto");
+                        }
+
+                    }
+                    catch (Exception e)
+                    {
+                        throw new Exception("Error al ejecutar el reader");
+                    }
+                }
+                return -1;
+
+
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
 
         public bool insertarProducto(Model_Producto mp, int idCliente, int idTipo)
         {

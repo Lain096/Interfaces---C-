@@ -111,11 +111,12 @@ namespace Proyecto_Joyeria.View
             ViewModelReparationAdminControl vm = new ViewModelReparationAdminControl();
             if (producto.Estado)
             {
+                Model_Person p = new Model_Person();
+                int id = vm.buscarIdDueño(producto.IdPersona);
+                p = vm.buscarPersona(id);
+
                 GeneratePDF pdf = new GeneratePDF();
-                pdf.crearPDF(producto);
-
-
-             
+                pdf.crearPDF(producto, p);            
 
             }
             else
