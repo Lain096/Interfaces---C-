@@ -37,25 +37,39 @@ namespace Proyecto_Joyeria.View
             string pass1 = txtModificarPass1.Password;
             string pass2 = txtModificarPass2.Password;
 
+
             if (pass1.Equals(pass2))
             {
-                mp.Name = txtModificarUsername.Text;
-                mp.Email = txtModificarEmail.Text;
-                mp.Pass = pass1;
-
-                if (vm.modificarUsuario(mp))
+                if (!String.IsNullOrEmpty(txtModificarEmail.Text))
                 {
-                    DialogResult = true;
-                    this.Close();
+                    mp.Email = txtModificarEmail.Text;
                 }
 
-            }
-            else
-            {
-                MessageBox.Show("Las contraseñas no coinciden");
-            }       
+                if (!String.IsNullOrEmpty(txtModificarUsername.Text))
+                {
+                    mp.Name = txtModificarUsername.Text;
+                }
 
-        }
+                if (!String.IsNullOrEmpty(pass1) || !String.IsNullOrEmpty(pass2)) 
+                    {
+                        mp.Pass = pass1;
+                    }
+
+
+                    if (vm.modificarUsuario(mp))
+                    {
+                        DialogResult = true;
+                        this.Close();
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Las contraseñas no coinciden");
+                }
+
+
+            }
 
         public static Model_Person devolverUsuario()
         {
