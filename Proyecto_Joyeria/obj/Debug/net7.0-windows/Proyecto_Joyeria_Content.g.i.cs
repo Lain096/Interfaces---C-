@@ -11,5 +11,6 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/logo.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/pass.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/user.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icon.ico")]
 
 
