@@ -34,7 +34,7 @@ namespace Proyecto_Joyeria.View
             informacionNombre.Text = mp.Nombre;
             informacionInformacion.Text = mp.Informacion;
             informacionModificacion.Text = mp.Modificacion;
-            informacionFechaDeposito.Text = mp.FechaDeposito.ToString();
+            informacionFechaDeposito.Text = mp.FechaDeposito.ToString("dd-MM-yyyy");
             informacionImagen.Source = Utils.ConvertByteArrayToBitmapImage(mp.Imagen);
         }
 

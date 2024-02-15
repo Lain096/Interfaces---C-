@@ -112,8 +112,8 @@ namespace Proyecto_Joyeria.View
             if (producto.Estado)
             {
                 Model_Person p = new Model_Person();
-                int id = vm.buscarIdDueño(producto.IdPersona);
-                p = vm.buscarPersona(id);
+               
+                p = vm.buscarPersona(producto.IdPersona);
 
                 GeneratePDF pdf = new GeneratePDF();
                 pdf.crearPDF(producto, p);            

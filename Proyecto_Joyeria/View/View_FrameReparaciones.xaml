@@ -137,7 +137,7 @@
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Id" Width="50" Binding="{Binding IdProducto}"/>
                     <DataGridTextColumn Header="Producto" Width="*" Binding="{Binding Nombre}"/>
-                    <DataGridTextColumn Header="Fecha Depósito" Width="*" Binding="{Binding FechaDeposito}"/>
+                    <DataGridTextColumn Header="Fecha Depósito" Width="*" Binding="{Binding FechaDeposito, StringFormat={}{0:d}}"/>
                     <DataGridTextColumn Header="Estado" Width="*" Binding="{Binding Terminado}"/>
                 </DataGrid.Columns>
                 

@@ -4953,19 +4953,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\daw2t07\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\Interfaces\\Proyecto_Joyeria\\Proyecto_Joyeria.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Interfaces---C-\\Proyecto_Joyeria\\Proyecto_Joyeria.csproj",
       "projectName": "Proyecto_Joyeria",
-      "projectPath": "D:\\Git\\Interfaces\\Proyecto_Joyeria\\Proyecto_Joyeria.csproj",
-      "packagesPath": "C:\\Users\\daw2t07\\.nuget\\packages\\",
-      "outputPath": "D:\\Git\\Interfaces\\Proyecto_Joyeria\\obj\\",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\Interfaces---C-\\Proyecto_Joyeria\\Proyecto_Joyeria.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\Interfaces---C-\\Proyecto_Joyeria\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\daw2t07\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

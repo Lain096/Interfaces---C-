@@ -26,24 +26,7 @@ namespace Proyecto_Joyeria.View
 
             PersonaCollection pc = new PersonaCollection();
             ViewModelUsersAdminControl vm = new ViewModelUsersAdminControl();
-            //DataTable dt = new DataTable();
-
-
-            //dt.Columns.Add("idPersonas");
-            //dt.Columns.Add("Nombre");
-            //dt.Columns.Add("Email");
-            //dt.Columns.Add("isAdmin");
-
-
-            //dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Id", Width = 50 });
-            //dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Usuario", Width = 150 });
-            //dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Email", Width = new DataGridLength(1, DataGridLengthUnitType.Star) });
-            //dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Admin", Width = 100 });
-
-            //dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Id", Width = 50, Binding = new Binding("Id") });
-            //dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Usuario", Width = 150, Binding = new Binding("Name") });
-            //dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Correo Electrónico", Width = new DataGridLength(1, DataGridLengthUnitType.Star), Binding = new Binding("Email") });
-            //dataGridAdmin.Columns.Add(new DataGridTextColumn { Header = "Admin", Width = 100, Binding = new Binding("IsAdmin") });
+          
 
             dataGridAdmin.ItemsSource = null;
             dataGridAdmin.IsReadOnly = true;
@@ -56,34 +39,6 @@ namespace Proyecto_Joyeria.View
             {
                 MessageBox.Show("No se han podido mostrar los datos");
             }
-
-
-
-
-
-            //foreach (Model_Person p in pc)
-            //{
-
-            //    //DataRow row = dt.NewRow();
-
-            //    //row["Id"] = p.Id;
-            //    //row["Nombre"] = p.Name;
-            //    //row["Email"] = p.Email;
-            //    //row["Admin"] = p.IsAdmin;
-            //    //dt.Rows.Add(row);
-
-
-            //    dt.Rows.Add
-            //    (
-            //        p.Id,
-            //        p.Name,
-            //        p.Email,
-            //        p.IsAdmin
-            //     );
-
-
-
-            //}
             dataGridAdmin.ItemsSource = pc;
 
 
@@ -91,31 +46,38 @@ namespace Proyecto_Joyeria.View
 
         private void btnBuscar_Usuario(object sender, RoutedEventArgs e)
         {
-            string? dato = txtNombreBuscar.Text;
-
-            if (!String.IsNullOrEmpty(dato))
+            try
             {
+                string? dato = txtNombreBuscar.Text;
 
-                PersonaCollection pc = new PersonaCollection();
-                ViewModelUsersAdminControl vm = new ViewModelUsersAdminControl();
-                dataGridAdmin.ItemsSource = null;
-                dataGridAdmin.IsReadOnly = true;
-
-                try
+                if (!String.IsNullOrEmpty(dato))
                 {
-                    pc = vm.buscarUsuario(dato);
 
-                    dataGridAdmin.ItemsSource = pc;
+                    PersonaCollection pc = new PersonaCollection();
+                    ViewModelUsersAdminControl vm = new ViewModelUsersAdminControl();
+                    dataGridAdmin.ItemsSource = null;
+                    dataGridAdmin.IsReadOnly = true;
+
+                    try
+                    {
+                        pc = vm.buscarUsuario(dato);
+
+                        dataGridAdmin.ItemsSource = pc;
+                    }
+                    catch (Exception)
+                    {
+                        throw new Exception("No existe un usuario con esos datos");
+                    }
+
                 }
-                catch (Exception)
+                else
                 {
-                    throw new Exception("No existe un usuario con esos datos");
+                    cargarTablaUsuarios();
                 }
-
             }
-            else
+            catch (Exception ex)
             {
-                cargarTablaUsuarios();
+                
             }
 
 

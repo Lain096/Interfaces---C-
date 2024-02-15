@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Proyecto_Joyeria")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3dfd1122d10cf9e133bb16b016e8f65b1a544af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Proyecto_Joyeria")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Proyecto_Joyeria")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -72,13 +72,6 @@ namespace Proyecto_Joyeria.View
             }
         }
 
-        private void infoPrecio(object sender, RoutedEventArgs e)
-        {
-            if (!String.IsNullOrEmpty(informacionPrecio.ToString()))
-            {
-                informacionPrecio.IsReadOnly = true;
-                informacionPrecio.Text = mp.Precio.ToString();
-            }
-        }
+       
     }
 }

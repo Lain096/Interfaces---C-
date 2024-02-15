@@ -132,7 +132,7 @@
                        HorizontalAlignment="Left"
                        Grid.Column="5" 
                        Grid.Row="8" 
-                       Text="{Binding FechaDeposito}"
+                       Text="{Binding FechaDeposito ,StringFormat={}{0:d}}"
                        Margin=" 0,7,0,0"
                        FontSize="18" 
                        FontStyle="Italic" 
@@ -156,7 +156,7 @@
                        Grid.Column="2" 
                        Grid.RowSpan="2" 
                        Width="100"
-                     Loaded="infoPrecio"
+                    
                        Text="{Binding Precio, StringFormat=N2, ConverterCulture='es-ES', Mode=OneTime}"
                        VerticalAlignment="Center" 
                        HorizontalAlignment="Left"

@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Proyecto_Joyeria.View"
         mc:Ignorable="d"
         Title="View_ModificarUsuario" Height="450" Width="800"
-        Background="Transparent">
+        Background="Transparent"
+        WindowStyle="None">
     <Border CornerRadius="5">
         <Border.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">

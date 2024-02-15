@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Media.Imaging;
 
 namespace Proyecto_Joyeria.ViewModel
@@ -122,7 +123,10 @@ namespace Proyecto_Joyeria.ViewModel
             producto.Precio = precio;
             producto.Estado = true;
             producto.Terminado = "Reparado";
-            producto.FechaRecogida = DateTime.Now;
+       
+            producto.FechaRecogida = DateTime.UtcNow.ToLocalTime();
+
+          
 
             try
             {

@@ -35,21 +35,45 @@ namespace Proyecto_Joyeria.Core
            
             PageSize tamanio = new PageSize(612, 792);
             Document documento = new Document(pdf, tamanio);
-            //Document documento = new Document(pdf, PageSize.LETTER);
+    
 
             documento.SetMargins(80, 20, 55, 20);
 
             PdfFont fontColumnas = PdfFontFactory.CreateFont(StandardFonts.HELVETICA_BOLD);
             PdfFont fontContenido = PdfFontFactory.CreateFont(StandardFonts.HELVETICA);
 
-            //string[] columnas = { "ID","Categoria", "Dueño", "Producto", "Descripción", "Modificacion", "Precio" };
+            #region Tabla Persona
+            var subtituloP = new Paragraph("Detalles de la Persona").SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER).SetFontSize(16);
+
+            string[] columnasPersona = { "ID", "Nombre", "Email"};
+            float[] tamaniosPersona = { 2, 6, 15};
+
+            Table tablaP = new Table(UnitValue.CreatePercentArray(tamaniosPersona));
+
+            documento.Add(subtituloP);
+            tablaP.SetWidth(UnitValue.CreatePercentValue(100));
+
+            foreach (string columna in columnasPersona)
+            {
+                tablaP.AddHeaderCell(new Cell().Add(new Paragraph(columna).SetFont(fontColumnas)));
+            }
+
+            tablaP.AddCell(new Cell().Add(new Paragraph(mp.Id.ToString()).SetFont(fontContenido)));
+            tablaP.AddCell(new Cell().Add(new Paragraph(mp.Name).SetFont(fontContenido)));
+            tablaP.AddCell(new Cell().Add(new Paragraph(mp.Email).SetFont(fontContenido)));
+
+            documento.Add(tablaP);
+
+            #endregion
+
+            #region Tabla Producto
             string[] columnasProducto = { "ID", "Categoria", "Producto", "Descripción", "Modificacion", "Precio" };
             float[] tamaniosProductos = { 2, 6, 6, 10, 10, 2 };
 
-            var encabezado = new Paragraph("Factura").SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER).SetBold().SetFontSize(28).SetFontColor(new DeviceRgb(255, 0, 0));
+          
             var subtitulo = new Paragraph("Detalles del Producto").SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER).SetFontSize(16);
 
-            documento.Add(encabezado);
+       
             documento.Add(subtitulo);
 
             Table tabla = new Table(UnitValue.CreatePercentArray(tamaniosProductos));
@@ -72,22 +96,7 @@ namespace Proyecto_Joyeria.Core
 
             documento.Add(tabla);
 
-            string[] columnasPersona = { "ID", "Nombre", "Email"};
-            float[] tamaniosPersona = { 2, 6, 15};
-
-            Table tablaP = new Table(UnitValue.CreatePercentArray(tamaniosPersona));
-            tablaP.SetWidth(UnitValue.CreatePercentValue(100));
-
-            foreach (string columna in columnasPersona)
-            {
-                tabla.AddHeaderCell(new Cell().Add(new Paragraph(columna).SetFont(fontColumnas)));
-            }
-
-            tablaP.AddCell(new Cell().Add(new Paragraph(mp.Id.ToString()).SetFont(fontContenido)));
-            tablaP.AddCell(new Cell().Add(new Paragraph(mp.Name).SetFont(fontContenido)));
-            tablaP.AddCell(new Cell().Add(new Paragraph(mp.Email).SetFont(fontContenido)));
-
-            documento.Add(tablaP);
+            #endregion
 
             var firma= new Paragraph("Firma: ___________________________").SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER).SetFontSize(12).SetMarginTop(100);
 
@@ -113,11 +122,9 @@ namespace Proyecto_Joyeria.Core
             titulo.SetBold();
             titulo.SetFontSize(24);
 
-            //var dfecha = DateTime.Now.ToString("dd-MM-yyyy");
-            var dfecha = p.FechaRecogida.ToString("dd-MM-yyyy HH:mm");
-            //var dhora = DateTime.Now.ToString("HH:mm");
-            // var fecha = new Paragraph("Fecha: " + dfecha + "\nHora: " + dhora);
-            // var fecha = new Paragraph(p.FechaRecogida.ToString("dd--MM--yyyy"));
+         
+            var dfecha = p.FechaRecogida.ToString("dd-MM-yyyy");
+           
             var fecha = new Paragraph("Fecha de finalización: " + dfecha).SetFontSize(12);
 
 

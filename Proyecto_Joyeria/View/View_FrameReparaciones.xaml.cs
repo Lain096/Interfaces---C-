@@ -77,33 +77,42 @@ namespace Proyecto_Joyeria.View
 
         private void buscarProducto(object sender, RoutedEventArgs e)
         {
-            string? dato = txtBuscarProducto.Text;
-            if (!String.IsNullOrEmpty(dato))
+            try
             {
-
-                ProductoCollection pc = new ProductoCollection();
-                ViewModelReparacionesUsuarios vm = new ViewModelReparacionesUsuarios();
-                dataGridMostrarProductosUsuarios.ItemsSource = null;
-                dataGridMostrarProductosUsuarios.IsReadOnly = true;
-                try
-                {
-                    pc = vm.buscarProducto(dato, p.Id);
-                    dataGridMostrarProductosUsuarios.ItemsSource = pc;
-
-                }catch(Exception een)
+                string? dato = txtBuscarProducto.Text;
+                if (!String.IsNullOrEmpty(dato))
                 {
 
-                   throw new Exception("No se han podido mostrar los datos" + een.Message);
+                    ProductoCollection pc = new ProductoCollection();
+                    ViewModelReparacionesUsuarios vm = new ViewModelReparacionesUsuarios();
+                    dataGridMostrarProductosUsuarios.ItemsSource = null;
+                    dataGridMostrarProductosUsuarios.IsReadOnly = true;
+                    try
+                    {
+                        pc = vm.buscarProducto(dato, p.Id);
+                        dataGridMostrarProductosUsuarios.ItemsSource = pc;
+
+                    }
+                    catch (Exception een)
+                    {
+
+                        throw new Exception("No se han podido mostrar los datos" + een.Message);
+                    }
+
+
+
                 }
-
-
-
+                else
+                {
+                    cargarTablaReparaciones();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                cargarTablaReparaciones();
+                MessageBox.Show(ex.Message);
             }
         }
+
 
         private void btnAñadirProducto(object sender, RoutedEventArgs e)
         {

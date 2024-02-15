@@ -199,7 +199,7 @@ namespace Proyecto_Joyeria.Model
                         }
                         else
                         {
-                            throw new Exception("No se ha encontrado el producto");
+                            throw new Exception("No se ha encontrado a la persona");
                         }
 
                     }
@@ -309,7 +309,12 @@ namespace Proyecto_Joyeria.Model
                                     model_Producto.Precio = reader.GetFloat(8);
                                     }
                                     model_Producto.Modificacion = reader.GetString(9);
-                                    // model_Producto.FechaRecogida = reader.GetDateTime(10);
+
+                                    if (!reader.IsDBNull(10))
+                                    {
+                                    model_Producto.FechaRecogida = reader.GetDateTime(10);
+                                    }
+                                    
 
                                     if (!reader.IsDBNull(11))
                                     {
@@ -432,7 +437,7 @@ namespace Proyecto_Joyeria.Model
                 }
                 catch (Exception e)
                 {
-                    throw new Exception("ERROR");
+                    throw new Exception(e.Message);
                 }
             }
 
@@ -575,6 +580,11 @@ namespace Proyecto_Joyeria.Model
                                     }
 
                                     mp.Modificacion = reader.GetString(9);
+
+                                    if (!reader.IsDBNull(10))
+                                    {
+                                        mp.fechaRecogida = reader.GetDateTime(10);
+                                    }
 
                                     if (!reader.IsDBNull(11))
                                     {
