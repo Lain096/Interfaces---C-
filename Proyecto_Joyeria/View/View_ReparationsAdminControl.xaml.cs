@@ -89,18 +89,24 @@ namespace Proyecto_Joyeria.View
             ViewModelReparationAdminControl vm = new ViewModelReparationAdminControl();
 
             var producto = (Model_Producto)dataGridMostrarProductosAdmin.SelectedItem;
+            if (producto != null) { 
 
-            if (producto != null)
+                if (producto != null)
+                {
+                    if (vm.eliminarProducto(producto.IdProducto))
+                    {
+                        MessageBox.Show("Producto eliminado con éxito");
+                        cargarTablaReparaciones();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se ha podido eliminar el producto");
+                    }
+                }
+            }
+            else
             {
-                if (vm.eliminarProducto(producto.IdProducto))
-                {
-                    MessageBox.Show("Producto eliminado con éxito");
-                    cargarTablaReparaciones();
-                }
-                else
-                {
-                    MessageBox.Show("No se ha podido eliminar el producto");
-                }
+                MessageBox.Show("No se ha seleccionado ningún producto");
             }
 
         }
@@ -109,19 +115,28 @@ namespace Proyecto_Joyeria.View
         {
             var producto = (Model_Producto)dataGridMostrarProductosAdmin.SelectedItem;
             ViewModelReparationAdminControl vm = new ViewModelReparationAdminControl();
-            if (producto.Estado)
+            if (producto != null)
             {
-                Model_Person p = new Model_Person();
-               
-                p = vm.buscarPersona(producto.IdPersona);
 
-                GeneratePDF pdf = new GeneratePDF();
-                pdf.crearPDF(producto, p);            
 
+                if (producto.Estado)
+                {
+                    Model_Person p = new Model_Person();
+
+                    p = vm.buscarPersona(producto.IdPersona);
+
+                    GeneratePDF pdf = new GeneratePDF();
+                    pdf.crearPDF(producto, p);
+
+                }
+                else
+                {
+                    MessageBox.Show("El producto no está reparado");
+                }
             }
             else
             {
-                MessageBox.Show("El producto no está reparado");
+                MessageBox.Show("No se ha seleccionado ningún producto");
             }
 
         }

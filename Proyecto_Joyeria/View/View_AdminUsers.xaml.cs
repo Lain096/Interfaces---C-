@@ -95,6 +95,10 @@ namespace Proyecto_Joyeria.View
                 vm.eliminarPersona(mp);
                 cargarTablaUsuarios();
             }
+            else
+            {
+                MessageBox.Show("No se ha seleccionado un usuario");
+            }
         }
     }
     

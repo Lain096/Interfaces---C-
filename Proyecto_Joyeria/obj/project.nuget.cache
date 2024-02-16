@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hdIJe4q2qI95Zk/YN0i3wLyqmGgvt5Iazgad6scl9QSlPcdB+DnYJrlfLG3nIFFefrtD1hXiGz79a5Fx4S+vQg==",
+  "dgSpecHash": "/RAmEPW5a3r4St0xDXc5E8XkDnQLKtjVW+X9wEyF/JSn1xQ1pqe6K4TBK6n4hacXV0kjUdHtjKy8CMwat3uoaQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Interfaces---C-\\Proyecto_Joyeria\\Proyecto_Joyeria.csproj",
+  "projectFilePath": "E:\\GitHub\\Interfaces---C-\\Proyecto_Joyeria\\Proyecto_Joyeria.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\bouncycastle\\1.8.9\\bouncycastle.1.8.9.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",

@@ -4958,11 +4958,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Interfaces---C-\\Proyecto_Joyeria\\Proyecto_Joyeria.csproj",
+      "projectUniqueName": "E:\\GitHub\\Interfaces---C-\\Proyecto_Joyeria\\Proyecto_Joyeria.csproj",
       "projectName": "Proyecto_Joyeria",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\Interfaces---C-\\Proyecto_Joyeria\\Proyecto_Joyeria.csproj",
+      "projectPath": "E:\\GitHub\\Interfaces---C-\\Proyecto_Joyeria\\Proyecto_Joyeria.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\Interfaces---C-\\Proyecto_Joyeria\\obj\\",
+      "outputPath": "E:\\GitHub\\Interfaces---C-\\Proyecto_Joyeria\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
