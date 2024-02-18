@@ -111,7 +111,6 @@
                       CanUserAddRows="False"
                       CanUserResizeColumns="True"
                       CanUserResizeRows="False"
-                      CanUserSortColumns="False"
                       RowBackground="Transparent"
                       HeadersVisibility="Column"
                       GridLinesVisibility="Horizontal"

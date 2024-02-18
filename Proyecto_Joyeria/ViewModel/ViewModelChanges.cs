@@ -35,17 +35,6 @@ namespace Proyecto_Joyeria.ViewModel
 				OnPropertyChanged();
 			}
 		}
-
-		public Model_Person PersonaSeleccionada
-		{
-            get { return personaSeleccionada; }
-            set
-			{
-                personaSeleccionada = value;
-                OnPropertyChanged(nameof(personaSeleccionada));
-            }
-        }
-
 		public ViewModelChanges()
 		{
 			
@@ -69,6 +58,17 @@ namespace Proyecto_Joyeria.ViewModel
 
 
         }
+
+		public Model_Person PersonaSeleccionada
+		{
+            get { return personaSeleccionada; }
+            set
+			{
+                personaSeleccionada = value;
+                OnPropertyChanged(nameof(personaSeleccionada));
+            }
+        }
+
 
 	}
 }
